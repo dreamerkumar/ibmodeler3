@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{71BF43A4-3FDC-4C01-9823-4C76FD08B48F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ajubaa.IBModeler.Help</RootNamespace>
+    <AssemblyName>Ajubaa.IBModeler.Help</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajubaa.Common">
+      <HintPath>..\Lib\Ajubaa.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckableItem.cs" />
+    <Compile Include="DialogHelps\AdjustSkinDialog.xaml.cs">
+      <DependentUpon>AdjustSkinDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Troubleshoot.xaml.cs">
+      <DependentUpon>Troubleshoot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DialogHelps\AddSkinDialog.xaml.cs">
+      <DependentUpon>AddSkinDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DialogHelps\AutoConfigure.xaml.cs">
+      <DependentUpon>AutoConfigure.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DialogHelps\AutoConfigureRequirements.xaml.cs">
+      <DependentUpon>AutoConfigureRequirements.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DialogHelps\BackgroundScreen.xaml.cs">
+      <DependentUpon>BackgroundScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DialogHelps\ClickInputs.xaml.cs">
+      <DependentUpon>ClickInputs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DialogHelps\CreateReady.xaml.cs">
+      <DependentUpon>CreateReady.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DialogHelps\MeshCreated.xaml.cs">
+      <DependentUpon>MeshCreated.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DialogHelps\ModelCreationInProcess.xaml.cs">
+      <DependentUpon>ModelCreationInProcess.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HideScreenStartDialogFlags.cs" />
+    <Compile Include="HelpMessageBox.xaml.cs">
+      <DependentUpon>HelpMessageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QuickProcessingWindow.xaml.cs">
+      <DependentUpon>QuickProcessingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QuickProcessingWindowHelper.cs" />
+    <Compile Include="ScreenStartDialogTypes.cs" />
+    <Compile Include="ScreenStartFlagsConfigurationDialog.xaml.cs">
+      <DependentUpon>ScreenStartFlagsConfigurationDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenStartHelpDialog.xaml.cs">
+      <DependentUpon>ScreenStartHelpDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StartScreenHelpDialogHelper.cs" />
+    <Compile Include="HowToTakePhotos.xaml.cs">
+      <DependentUpon>HowToTakePhotos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="DialogHelps\AdjustSkinDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Troubleshoot.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DialogHelps\AddSkinDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DialogHelps\AutoConfigure.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DialogHelps\AutoConfigureRequirements.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DialogHelps\BackgroundScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DialogHelps\ClickInputs.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DialogHelps\CreateReady.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DialogHelps\MeshCreated.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DialogHelps\ModelCreationInProcess.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HelpMessageBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="QuickProcessingWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\FlowDocument.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\GlassButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\HeaderText.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\LinkButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\TextStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ScreenStartFlagsConfigurationDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ScreenStartHelpDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HowToTakePhotos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fonts\raleway_thin.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\disc_shaped_objects.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\markings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\green_sheet_of_paper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fonts\final font - Junction 01.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\photo_shoot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\smoothen_control.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\screen_settings_after_test.png" />
+    <Resource Include="images\screen_settings_before_test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\mesh_density_slider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\save_processed_images_checkbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\click_positions_screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\rotation_should_not_exceed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\add_skin_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\alway_rotate_towards_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\adjust_skin_help.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

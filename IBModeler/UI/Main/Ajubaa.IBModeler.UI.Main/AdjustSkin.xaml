@@ -1,0 +1,55 @@
+﻿<Window x:Class="Ajubaa.IBModeler.UI.Main.AdjustSkin"
+        SizeToContent="WidthAndHeight"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" WindowStartupLocation = "CenterScreen"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:Customcontrols" xmlns:Main="clr-namespace:Ajubaa.IBModeler.UI.Main" Title="Adjust Skin" ResizeMode="NoResize" HorizontalAlignment="Center" VerticalAlignment="Center">
+        
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources\GlassButton.xaml"/>
+                <ResourceDictionary Source="Resources\MyListBox.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
+    </Window.Resources>
+    <StackPanel Orientation="Vertical" Width="270" Height="600">
+        <StackPanel.Background>
+            <SolidColorBrush Color="Black" />
+        </StackPanel.Background>
+
+        <TextBlock Text="Reduce skinning area for photo(s) by moving the sliders." Width="260" HorizontalAlignment="Center" Foreground="Orange" FontWeight="Bold" FontFamily="./Fonts/#junction" FontSize="15" Padding="7" TextWrapping="Wrap" />
+
+        <!--<StackPanel Margin="10,20,10,10">
+            <TextBlock Text="Improve skinning by reducing the area for a pair of photos. Select a photo pair below and then move sliders to select area." HorizontalAlignment="Center" Foreground="Orange" FontWeight="Bold" FontFamily="./Fonts/#junction" FontSize="15" Padding="7" TextWrapping="Wrap" />
+            <ListBox x:Name="addSkinOption" HorizontalAlignment="Center" HorizontalContentAlignment="Stretch" ItemContainerStyle="{StaticResource RoundedItem}"  Margin="0,5,0,0">
+                <ListBoxItem Content="Reduce skin area for Left and Right Photos" Selected="ListBoxItemSelectedLeftRight" IsSelected="True"></ListBoxItem>
+                <ListBoxItem Content="Reduce skin area for Front and Back Photos" Selected="ListBoxItemSelectedFrontBack"></ListBoxItem>
+            </ListBox>
+        </StackPanel>-->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Main:SliderForAdjustSkin x:Name="LeftImageMinMaxTexCoodSlider" Margin="10" />
+            <Main:SliderForAdjustSkin x:Name="RightImageMinMaxTexCoodSlider" Margin="10"  />
+            <Main:SliderForAdjustSkin x:Name="FrontImageMinMaxTexCoodSlider" Margin="10" />
+            <Main:SliderForAdjustSkin x:Name="BackImageMinMaxTexCoodSlider" Margin="10"/>
+        </StackPanel>    
+        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <Button  Content="Help" Click="HelpButtonClicked" x:Name="HelpButton" ToolTip="Help"
+                            FontSize="15" 
+                            Style="{StaticResource GlassButton}" Width="70" Height="50" Background="#FF1D5BBA"  Margin="10,10,0,10"
+                            Foreground="Orange"
+                            FontFamily="Arial Unicode MS"  />
+            <Button  Content="Save" Click="SaveClicked" x:Name="AddSkinButton" ToolTip="Add skin to the model"
+                            FontSize="15" 
+                            Style="{StaticResource GlassButton}" Width="70" Height="50" Background="#FF1D5BBA"  Margin="10,10,0,10"
+                            Foreground="Orange"
+                            FontFamily="Arial Unicode MS"  />
+            <Button  Content="Cancel" Click="CancelButtonClicked" x:Name="CancelButton" ToolTip="Cancel"
+                            FontSize="15" 
+                            Style="{StaticResource GlassButton}" Width="70" Height="50" Background="#FF1D5BBA"  Margin="10"
+                            Foreground="Orange"
+                            FontFamily="Arial Unicode MS"  />
+
+        </StackPanel>
+    </StackPanel>
+</Window>

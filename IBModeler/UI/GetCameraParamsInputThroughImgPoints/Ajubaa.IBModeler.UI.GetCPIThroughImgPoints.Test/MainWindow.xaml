@@ -1,0 +1,14 @@
+﻿<Window x:Class="Ajubaa.IBModeler.UI.GetCameraParamsInputThroughImgPoints.Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:GetCameraParamsInputThroughImgPoints1="clr-namespace:Ajubaa.IBModeler.UI.GetCameraParamsInputThroughImgPoints;assembly=Ajubaa.IBModeler.GetCameraParamsInputThroughImgPoints" Title="MainWindow"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized">
+    
+    <Grid>
+        <Button x:Name="SelectDirectory" Click="ButtonBase_OnClick" Content="Select Image folder" Grid.ZIndex="100"/>
+        <GetCameraParamsInputThroughImgPoints1:ImgListHandler x:Name="ImgListHandler" 
+            VerticalContentAlignment="Stretch"
+            HorizontalContentAlignment="Stretch" Grid.ZIndex="99"/>
+    </Grid>
+</Window>

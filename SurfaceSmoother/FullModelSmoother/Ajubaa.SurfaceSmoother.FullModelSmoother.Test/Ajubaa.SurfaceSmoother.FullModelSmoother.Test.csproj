@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8513C171-1DBB-4942-AA5F-6130AF4E3248}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ajubaa.SurfaceSmoother.FullModelSmoother.Test</RootNamespace>
+    <AssemblyName>Ajubaa.SurfaceSmoother.FullModelSmoother.Test</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\SharedLib\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PaulBourkeSmootherTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Ajubaa.Common\Ajubaa.Common.csproj">
+      <Project>{8E6395DC-4BE2-4D63-86CD-584AD30A94F1}</Project>
+      <Name>Ajubaa.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\PolygonDataReaders\Ajubaa.Common.PolygonDataReaders\Ajubaa.Common.PolygonDataReaders.csproj">
+      <Project>{5D11131A-98E1-4716-B2B3-2DDBF1B58A8A}</Project>
+      <Name>Ajubaa.Common.PolygonDataReaders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\PolygonDataWriters\Ajubaa.Common.PolygonDataWriters\Ajubaa.Common.PolygonDataWriters.csproj">
+      <Project>{2B7969F5-2EBA-4D68-AC22-97FF93FF5121}</Project>
+      <Name>Ajubaa.Common.PolygonDataWriters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ajubaa.SurfaceSmoother.FullModelSmoother\Ajubaa.SurfaceSmoother.FullModelSmoother.csproj">
+      <Project>{055A538F-A05D-4E43-8349-5F253C5B5E95}</Project>
+      <Name>Ajubaa.SurfaceSmoother.FullModelSmoother</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Input\batman.mdl" />
+    <None Include="Input\block.mdl" />
+    <None Include="Input\dinosaur.mdl" />
+    <None Include="Input\flowerpetals.mdl" />
+    <None Include="Input\tshirt.mdl" />
+    <None Include="Input\v.mdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Output\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

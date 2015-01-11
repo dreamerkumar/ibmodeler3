@@ -1,0 +1,17 @@
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\Ajubaa.XamlModelViewer._3DTools\bin\Debug\Ajubaa.XamlModelViewer._3DTools.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\Ajubaa.XamlModelViewer._3DTools\bin\Debug\Ajubaa.XamlModelViewer._3DTools.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\Ajubaa.XamlModelViewer._3DTools\bin\Debug\Ajubaa.Common.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\Ajubaa.XamlModelViewer._3DTools\bin\Debug\log4net.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\Ajubaa.XamlModelViewer._3DTools\bin\Debug\Ajubaa.Common.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\Ajubaa.XamlModelViewer._3DTools\bin\Debug\log4net.xml
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\Ajubaa.XamlModelViewer._3DTools\obj\Debug\ResolveAssemblyReference.cache
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\Ajubaa.XamlModelViewer._3DTools\obj\Debug\Resources\GlassButton.baml
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\Ajubaa.XamlModelViewer._3DTools\obj\Debug\Trackport3D.baml
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\Ajubaa.XamlModelViewer._3DTools\obj\Debug\Trackport3D.g.cs
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\Ajubaa.XamlModelViewer._3DTools\obj\Debug\Ajubaa.XamlModelViewer._3DTools_MarkupCompile.cache
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\Ajubaa.XamlModelViewer._3DTools\obj\Debug\Ajubaa.XamlModelViewer._3DTools.g.resources
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\Ajubaa.XamlModelViewer._3DTools\obj\Debug\Ajubaa.XamlModelViewer._3DTools.Properties.Resources.resources
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\Ajubaa.XamlModelViewer._3DTools\obj\Debug\GenerateResource.read.1.tlog
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\Ajubaa.XamlModelViewer._3DTools\obj\Debug\GenerateResource.write.1.tlog
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\Ajubaa.XamlModelViewer._3DTools\obj\Debug\Ajubaa.XamlModelViewer._3DTools.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\Ajubaa.XamlModelViewer._3DTools\obj\Debug\Ajubaa.XamlModelViewer._3DTools.pdb

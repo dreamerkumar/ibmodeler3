@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="Ajubaa.IBModeler.Help.DialogHelps.AdjustSkinDialog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="600">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\Resources\TextStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <TextBlock Style="{StaticResource UsualText}" TextWrapping="Wrap" Margin="10">
+        <TextBlock TextDecorations="Underline">Adjust Skin</TextBlock>
+        <LineBreak/>
+        This option is available when you use 4 corner photos as model skin. If you
+        <LineBreak/>
+        find that some images overlap, you can fix it by reducing the area of each
+        <LineBreak/>
+        image in the skin.
+        <LineBreak/>
+        <LineBreak/>
+        Typically, the skin values for each photo can be anywhere between 0 to 1.
+        <LineBreak/>
+        The actual values for the given model are shown in the dialog.
+        <LineBreak/>
+        <LineBreak/>
+        You can move the sliders for each photo to reduce these values to get a 
+        <LineBreak/>
+        better fitting skin.
+        <LineBreak/>
+        <LineBreak/>
+        The below diagram illustrates how these values are set for each photo:
+        <LineBreak/>  
+        <Image Margin="0,5,0,0" HorizontalAlignment="Center" Width="200" Source="pack://application:,,,/Ajubaa.IBModeler.Help;component/images/adjust_skin_help.png" />
+    </TextBlock>
+</UserControl>

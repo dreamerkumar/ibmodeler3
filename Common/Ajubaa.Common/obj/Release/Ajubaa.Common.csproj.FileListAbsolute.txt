@@ -1,0 +1,10 @@
+C:\IBMODELER3\Code\branches\rel_3.0\Common\Ajubaa.Common\bin\Release\Ajubaa.Common.dll
+C:\IBMODELER3\Code\branches\rel_3.0\Common\Ajubaa.Common\bin\Release\Ajubaa.Common.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\Common\Ajubaa.Common\bin\Release\log4net.dll
+C:\IBMODELER3\Code\branches\rel_3.0\Common\Ajubaa.Common\bin\Release\nunit.core.dll
+C:\IBMODELER3\Code\branches\rel_3.0\Common\Ajubaa.Common\bin\Release\nunit.framework.dll
+C:\IBMODELER3\Code\branches\rel_3.0\Common\Ajubaa.Common\bin\Release\log4net.xml
+C:\IBMODELER3\Code\branches\rel_3.0\Common\Ajubaa.Common\bin\Release\nunit.framework.xml
+C:\IBMODELER3\Code\branches\rel_3.0\Common\Ajubaa.Common\obj\Release\ResolveAssemblyReference.cache
+C:\IBMODELER3\Code\branches\rel_3.0\Common\Ajubaa.Common\obj\Release\Ajubaa.Common.dll
+C:\IBMODELER3\Code\branches\rel_3.0\Common\Ajubaa.Common\obj\Release\Ajubaa.Common.pdb

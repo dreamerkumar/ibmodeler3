@@ -1,0 +1,11 @@
+C:\IBMODELER3\Code\branches\rel_3.0\LineFromPtCollection\Ajubaa.LineFromPtCollection\bin\Release\Ajubaa.LineFromPtCollection.dll
+C:\IBMODELER3\Code\branches\rel_3.0\LineFromPtCollection\Ajubaa.LineFromPtCollection\bin\Release\Ajubaa.LineFromPtCollection.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\LineFromPtCollection\Ajubaa.LineFromPtCollection\bin\Release\Ajubaa.Common.dll
+C:\IBMODELER3\Code\branches\rel_3.0\LineFromPtCollection\Ajubaa.LineFromPtCollection\bin\Release\Ajubaa.Common.MatrixManipulations.dll
+C:\IBMODELER3\Code\branches\rel_3.0\LineFromPtCollection\Ajubaa.LineFromPtCollection\bin\Release\log4net.dll
+C:\IBMODELER3\Code\branches\rel_3.0\LineFromPtCollection\Ajubaa.LineFromPtCollection\bin\Release\Ajubaa.Common.MatrixManipulations.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\LineFromPtCollection\Ajubaa.LineFromPtCollection\bin\Release\Ajubaa.Common.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\LineFromPtCollection\Ajubaa.LineFromPtCollection\bin\Release\log4net.xml
+C:\IBMODELER3\Code\branches\rel_3.0\LineFromPtCollection\Ajubaa.LineFromPtCollection\obj\Release\ResolveAssemblyReference.cache
+C:\IBMODELER3\Code\branches\rel_3.0\LineFromPtCollection\Ajubaa.LineFromPtCollection\obj\Release\Ajubaa.LineFromPtCollection.dll
+C:\IBMODELER3\Code\branches\rel_3.0\LineFromPtCollection\Ajubaa.LineFromPtCollection\obj\Release\Ajubaa.LineFromPtCollection.pdb

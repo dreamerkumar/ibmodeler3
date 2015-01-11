@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="Ajubaa.IBModeler.Help.DialogHelps.MeshCreated"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             >
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\Resources\TextStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <TextBlock Style="{StaticResource UsualText}" TextWrapping="Wrap">
+        <TextBlock TextDecorations="Underline">Your model mesh is created and available for view!</TextBlock>
+        <LineBreak/>        
+        Left click and drag with your mouse to rotate the model.
+        <LineBreak/>
+        Right click and drag to zoom in or zoom out.
+        <LineBreak/>        
+        Click on the animation buttons for some animated displays.
+        <LineBreak/>        
+        Hit the 'Wireframe' button at the bottom for a closer inspection of the mesh.
+        <LineBreak/>
+        <LineBreak/>
+        <TextBlock TextDecorations="Underline">Make it look more real by adding skin</TextBlock>
+        <LineBreak/>
+        Right now you are only seeing the shape in gray.
+        <LineBreak/>
+        Click on 'Add Skin' to add your photos as skin to make it look more real.
+        <LineBreak/>
+        <LineBreak/>
+        <TextBlock TextDecorations="Underline">Make it smoother</TextBlock>
+        <LineBreak/>
+        You can make the model more smooth or crude. Use the smoothness options on the top left.
+        <LineBreak/>
+        <LineBreak/>
+        <TextBlock TextDecorations="Underline">Save</TextBlock>
+        <LineBreak/>
+        Export this model for use with other softwares to create your gaming or animation videos.
+        <LineBreak/>
+        Use the buttons on the right to save it in specific formats.
+        <LineBreak/>
+        <LineBreak/>
+        <TextBlock TextDecorations="Underline">Troubleshoot</TextBlock>
+        <LineBreak/>
+        Didn't get the output you were looking for?
+        <LineBreak/>
+        Click on the 'Troubleshoot' button to figure out what went wrong.
+        <LineBreak/>
+        Hit 'Regenerate' button to change the settings and try again.
+    </TextBlock>
+</UserControl>

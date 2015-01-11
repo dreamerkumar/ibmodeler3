@@ -1,0 +1,53 @@
+﻿<Window x:Class="Ajubaa.IBModeler.UI.Main.AddSkin"
+        SizeToContent="WidthAndHeight"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" WindowStartupLocation = "CenterScreen"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:Customcontrols" Title="Add Skin" ResizeMode="NoResize" HorizontalAlignment="Center" VerticalAlignment="Center">
+        
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources\GlassButton.xaml"/>
+                <ResourceDictionary Source="Resources\MyListBox.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
+    </Window.Resources>
+    <StackPanel Orientation="Vertical">
+        <StackPanel.Background>
+            <ImageBrush ImageSource="images\meLUktg.jpg" />
+        </StackPanel.Background>
+        
+        <StackPanel Height="350" Width="360">
+            <Image x:Name="HelpImage" Height="340" Visibility="Collapsed" Margin="10,10,10,0"/>
+            <local:Colorpicker  x:Name="skinColorCombo" Visibility="Visible" Margin="0,160,0,160"></local:Colorpicker>
+        </StackPanel>    
+        
+        <TextBlock Text="Choose source for skin generation..." HorizontalAlignment="Center" Foreground="Black" FontWeight="Bold" FontFamily="./Fonts/#junction" FontSize="15" Padding="5" TextWrapping="Wrap" />
+        <ListBox x:Name="addSkinOption" HorizontalAlignment="Center" HorizontalContentAlignment="Stretch" ItemContainerStyle="{StaticResource RoundedItem}"  >
+            <ListBoxItem Content="Use front and Back Photo" Selected="ListBoxItem_Selected_Front_Back" IsSelected="True"></ListBoxItem>
+            <ListBoxItem Content="Use photos from four corners" Selected="ListBoxItem_Selected_Four"></ListBoxItem>
+            <ListBoxItem Content="Use photos from eight corners" Selected="ListBoxItem_Selected_Eight"></ListBoxItem>
+            <ListBoxItem Content="Use a single color as skin" Selected="ListBoxItem_Selected_Single_Color"></ListBoxItem>
+            <ListBoxItem Content="No skin" Selected="ListBoxItem_Selected_No_Skin"></ListBoxItem>
+        </ListBox>
+        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+            <Button  Content="Help" Click="HelpButtonClicked" x:Name="HelpButton" ToolTip="Help"
+                            FontSize="15" 
+                            Style="{StaticResource GlassButton}" Width="100" Height="50" Background="#FF1D5BBA"  Margin="10,10,0,10"
+                            Foreground="Orange"
+                            FontFamily="Arial Unicode MS"  />
+            <Button  Content="Save" Click="AddSkinButtonClicked" x:Name="AddSkinButton" ToolTip="Add skin to the model"
+                            FontSize="15" 
+                            Style="{StaticResource GlassButton}" Width="100" Height="50" Background="#FF1D5BBA"  Margin="10,10,0,10"
+                            Foreground="Orange"
+                            FontFamily="Arial Unicode MS"  />
+            <Button  Content="Cancel" Click="CancelButtonClicked" x:Name="CancelButton" ToolTip="Cancel"
+                            FontSize="15" 
+                            Style="{StaticResource GlassButton}" Width="100" Height="50" Background="#FF1D5BBA"  Margin="10"
+                            Foreground="Orange"
+                            FontFamily="Arial Unicode MS"  />
+
+        </StackPanel>
+    </StackPanel>
+</Window>

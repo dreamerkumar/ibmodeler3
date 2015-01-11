@@ -1,0 +1,9 @@
+C:\IBMODELER3\Code\branches\rel_3.0\SurfaceSmoother\FullModelSmoother\Ajubaa.SurfaceSmoother.FullModelSmoother\bin\Release\Ajubaa.SurfaceSmoother.FullModelSmoother.dll
+C:\IBMODELER3\Code\branches\rel_3.0\SurfaceSmoother\FullModelSmoother\Ajubaa.SurfaceSmoother.FullModelSmoother\bin\Release\Ajubaa.SurfaceSmoother.FullModelSmoother.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\SurfaceSmoother\FullModelSmoother\Ajubaa.SurfaceSmoother.FullModelSmoother\bin\Release\Ajubaa.Common.dll
+C:\IBMODELER3\Code\branches\rel_3.0\SurfaceSmoother\FullModelSmoother\Ajubaa.SurfaceSmoother.FullModelSmoother\bin\Release\log4net.dll
+C:\IBMODELER3\Code\branches\rel_3.0\SurfaceSmoother\FullModelSmoother\Ajubaa.SurfaceSmoother.FullModelSmoother\bin\Release\Ajubaa.Common.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\SurfaceSmoother\FullModelSmoother\Ajubaa.SurfaceSmoother.FullModelSmoother\bin\Release\log4net.xml
+C:\IBMODELER3\Code\branches\rel_3.0\SurfaceSmoother\FullModelSmoother\Ajubaa.SurfaceSmoother.FullModelSmoother\obj\Release\ResolveAssemblyReference.cache
+C:\IBMODELER3\Code\branches\rel_3.0\SurfaceSmoother\FullModelSmoother\Ajubaa.SurfaceSmoother.FullModelSmoother\obj\Release\Ajubaa.SurfaceSmoother.FullModelSmoother.dll
+C:\IBMODELER3\Code\branches\rel_3.0\SurfaceSmoother\FullModelSmoother\Ajubaa.SurfaceSmoother.FullModelSmoother\obj\Release\Ajubaa.SurfaceSmoother.FullModelSmoother.pdb

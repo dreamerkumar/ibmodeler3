@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B126D6C1-FCC4-4391-8A39-A5702583938E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ajubaa.IBModeler.ImageAlterations.Test</RootNamespace>
+    <AssemblyName>Ajubaa.IBModeler.ImageAlterations.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\SharedLib\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExtraPaddingTest.cs" />
+    <Compile Include="ImageCropperTest.cs" />
+    <Compile Include="ImageRotatorTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Ajubaa.Common\Ajubaa.Common.csproj">
+      <Project>{8E6395DC-4BE2-4D63-86CD-584AD30A94F1}</Project>
+      <Name>Ajubaa.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ajubaa.IBModeler.Common\Ajubaa.IBModeler.Common.csproj">
+      <Project>{42E78142-4720-4128-9208-046896F53176}</Project>
+      <Name>Ajubaa.IBModeler.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Processor\Ajubaa.IBModeler.Processor\Ajubaa.IBModeler.Processor\Ajubaa.IBModeler.Processor.csproj">
+      <Project>{8113DEEE-F13B-4DFD-B711-DEE5C6448BD0}</Project>
+      <Name>Ajubaa.IBModeler.Processor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ajubaa.IBModeler.ImageAlterations\Ajubaa.IBModeler.ImageAlterations.csproj">
+      <Project>{0C59B1EA-7CEA-4C0B-97F4-553D57F9E25E}</Project>
+      <Name>Ajubaa.IBModeler.ImageAlterations</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

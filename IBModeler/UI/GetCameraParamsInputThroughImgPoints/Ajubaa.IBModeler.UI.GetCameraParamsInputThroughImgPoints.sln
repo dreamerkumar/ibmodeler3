@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.IBModeler.UI.GetCameraParamsInputThroughImgPoints", "Ajubaa.IBModeler.UI.GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.UI.GetCameraParamsInputThroughImgPoints.csproj", "{BAB1758F-A4C8-4C13-8385-4BBC077ED88E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.IBModeler.UI.GetCPIThroughImgPoints.Test", "Ajubaa.IBModeler.UI.GetCPIThroughImgPoints.Test\Ajubaa.IBModeler.UI.GetCPIThroughImgPoints.Test.csproj", "{698C12B0-85A3-4F41-BEA6-E33241FDF1EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.IBModeler.CameraAnglesFromImagePoints", "Ajubaa.IBModeler.CameraAnglesFromImagePoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints.csproj", "{14C48E12-4722-466C-8C03-9A11A36E1055}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAB1758F-A4C8-4C13-8385-4BBC077ED88E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{BAB1758F-A4C8-4C13-8385-4BBC077ED88E}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{BAB1758F-A4C8-4C13-8385-4BBC077ED88E}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{BAB1758F-A4C8-4C13-8385-4BBC077ED88E}.Debug|x86.ActiveCfg = Debug|x86
+		{BAB1758F-A4C8-4C13-8385-4BBC077ED88E}.Debug|x86.Build.0 = Debug|x86
+		{BAB1758F-A4C8-4C13-8385-4BBC077ED88E}.Release|Any CPU.ActiveCfg = Release|x86
+		{BAB1758F-A4C8-4C13-8385-4BBC077ED88E}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{BAB1758F-A4C8-4C13-8385-4BBC077ED88E}.Release|Mixed Platforms.Build.0 = Release|x86
+		{BAB1758F-A4C8-4C13-8385-4BBC077ED88E}.Release|x86.ActiveCfg = Release|x86
+		{BAB1758F-A4C8-4C13-8385-4BBC077ED88E}.Release|x86.Build.0 = Release|x86
+		{698C12B0-85A3-4F41-BEA6-E33241FDF1EE}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{698C12B0-85A3-4F41-BEA6-E33241FDF1EE}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{698C12B0-85A3-4F41-BEA6-E33241FDF1EE}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{698C12B0-85A3-4F41-BEA6-E33241FDF1EE}.Debug|x86.ActiveCfg = Debug|x86
+		{698C12B0-85A3-4F41-BEA6-E33241FDF1EE}.Debug|x86.Build.0 = Debug|x86
+		{698C12B0-85A3-4F41-BEA6-E33241FDF1EE}.Release|Any CPU.ActiveCfg = Release|x86
+		{698C12B0-85A3-4F41-BEA6-E33241FDF1EE}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{698C12B0-85A3-4F41-BEA6-E33241FDF1EE}.Release|Mixed Platforms.Build.0 = Release|x86
+		{698C12B0-85A3-4F41-BEA6-E33241FDF1EE}.Release|x86.ActiveCfg = Release|x86
+		{698C12B0-85A3-4F41-BEA6-E33241FDF1EE}.Release|x86.Build.0 = Release|x86
+		{14C48E12-4722-466C-8C03-9A11A36E1055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14C48E12-4722-466C-8C03-9A11A36E1055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14C48E12-4722-466C-8C03-9A11A36E1055}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{14C48E12-4722-466C-8C03-9A11A36E1055}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{14C48E12-4722-466C-8C03-9A11A36E1055}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{14C48E12-4722-466C-8C03-9A11A36E1055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14C48E12-4722-466C-8C03-9A11A36E1055}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14C48E12-4722-466C-8C03-9A11A36E1055}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{14C48E12-4722-466C-8C03-9A11A36E1055}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{14C48E12-4722-466C-8C03-9A11A36E1055}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

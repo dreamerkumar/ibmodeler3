@@ -1,0 +1,11 @@
+C:\IBMODELER3\Code\branches\rel_3.0\TextureGenerator\Ajubaa.TextureGenerator\bin\Debug\Ajubaa.TextureGenerator.dll
+C:\IBMODELER3\Code\branches\rel_3.0\TextureGenerator\Ajubaa.TextureGenerator\bin\Debug\Ajubaa.TextureGenerator.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\TextureGenerator\Ajubaa.TextureGenerator\bin\Debug\Ajubaa.Common.dll
+C:\IBMODELER3\Code\branches\rel_3.0\TextureGenerator\Ajubaa.TextureGenerator\bin\Debug\Ajubaa.Common.MatrixManipulations.dll
+C:\IBMODELER3\Code\branches\rel_3.0\TextureGenerator\Ajubaa.TextureGenerator\bin\Debug\log4net.dll
+C:\IBMODELER3\Code\branches\rel_3.0\TextureGenerator\Ajubaa.TextureGenerator\bin\Debug\Ajubaa.Common.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\TextureGenerator\Ajubaa.TextureGenerator\bin\Debug\Ajubaa.Common.MatrixManipulations.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\TextureGenerator\Ajubaa.TextureGenerator\bin\Debug\log4net.xml
+C:\IBMODELER3\Code\branches\rel_3.0\TextureGenerator\Ajubaa.TextureGenerator\obj\Debug\ResolveAssemblyReference.cache
+C:\IBMODELER3\Code\branches\rel_3.0\TextureGenerator\Ajubaa.TextureGenerator\obj\Debug\Ajubaa.TextureGenerator.dll
+C:\IBMODELER3\Code\branches\rel_3.0\TextureGenerator\Ajubaa.TextureGenerator\obj\Debug\Ajubaa.TextureGenerator.pdb

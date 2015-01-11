@@ -1,0 +1,117 @@
+﻿<Window x:Class="Ajubaa.IBModeler.Help.HowToTakePhotos"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Title="How to take photos for IBModeler">
+    
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources\LinkButton.xaml"/>
+                <ResourceDictionary Source="Resources\HeaderText.xaml"/>
+                <ResourceDictionary Source="Resources\FlowDocument.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <FlowDocumentScrollViewer>
+        <FlowDocument>
+            <Paragraph Style="{StaticResource HeaderText}">
+                How to take Photos for IBModeler
+            </Paragraph>
+            <Paragraph>
+                To  make a 3d model out of an object using IBModeler, you will need to obtain photos of it from all sides. 
+                The process of taking the photos is pretty straightforward. 
+            </Paragraph>
+            <Paragraph Style="{StaticResource HeaderText}" TextAlignment="Left">                
+                Disc Shaped Base 
+            </Paragraph>
+            <Paragraph>
+                The target object should be kept on top of a disc shaped base. You can use anything that has a cylindrical shape like pen holders, containers etc.
+            </Paragraph>
+            <Paragraph>
+                <Image Source="pack://application:,,,/Ajubaa.IBModeler.Help;component/images/disc_shaped_objects.png" 
+                    ToolTip="disc shaped objects that can be used as base" MaxHeight="248"/>                    
+            </Paragraph> 
+            <Paragraph>
+                On the sides of this base, make six or more vertical markings using a marker that could write on your base or you can paste 
+                something on the side with the marking. Try to keep the markings uniformly distributed over the perimeter of the disc.
+            </Paragraph>
+            <Paragraph>
+                <Image MaxHeight="106" Source="pack://application:,,,/Ajubaa.IBModeler.Help;component/images/markings.png" 
+                       ToolTip="markings on the model base"/>
+            </Paragraph>
+            <Paragraph>
+                Place the target object on top of the disc. Now place your camera in front in such a way that the top portion of the disc 
+                is also visible along with the object.
+            </Paragraph>
+            <Paragraph>
+                <Image MaxHeight="106" Source="pack://application:,,,/Ajubaa.IBModeler.Help;component/images/photo_shoot.png" 
+                       ToolTip="placing model on a disc base"/>
+            </Paragraph>
+            <Paragraph>
+                Try to keep a good distance between the camera and the object and use zoom to get a closer shot.
+                Make sure that both the camera and the model base are levelled horizontally.
+            </Paragraph>
+            <Paragraph Style="{StaticResource HeaderText}" TextAlignment="Left">
+                Background Screen
+            </Paragraph>
+            <Paragraph>
+                Behind the object, you will need to have a red, green or blue background. You can choose any of the three colors as long 
+                as the object does not contain the same color. The screen color should be as close to a true red, green or blue
+                screen as possible.
+            </Paragraph>
+            <Paragraph>
+                You can use  a sheet of paper, cloth, plastic or even a wall painted with one of these matching colors. 
+                A typical green sheet of paper from the stationary shop can do the job. But if you are looking for something more professional,
+                google 'chroma key backgrounds'.
+            </Paragraph>
+            <Paragraph>
+                <Image VerticalAlignment="Top" Source="pack://application:,,,/Ajubaa.IBModeler.Help;component/images/green_sheet_of_paper.jpg" 
+                            ToolTip="green sheet of paper that can be used as background" MaxHeight="104"/>
+            </Paragraph>
+            <Paragraph>
+                Make sure the setup has adequate lighting. A good daylight around your setup area will work. 
+                But if you use lights in your setup, make sure they are pure white lights.
+            </Paragraph>
+            <Paragraph Style="{StaticResource HeaderText}" TextAlignment="Left">
+                Rotate And Shoot
+            </Paragraph>
+            <Paragraph>
+                Now you are ready to take the photos.
+            </Paragraph>
+            <Paragraph>
+                Start with the front of the object. 
+                Then rotate the disc slightly by about 5 to 10 degrees and take another photo. 
+                Keep rotating and taking photos till the model is rotated by a full 360 degrees. 
+                More the number of photos, more accurate will be your 3d copy of the object.
+            </Paragraph>
+            <Paragraph>
+                One important point to remember is that the rotation between each shot should be less than the angle between two markings on the disc. 
+            </Paragraph>
+            <Paragraph>
+                <Image Source="pack://application:,,,/Ajubaa.IBModeler.Help;component/images/rotation_should_not_exceed.png" 
+                    ToolTip="rotation should not exceed the angle between two markings" MaxHeight="311"/>
+            </Paragraph>
+            <Paragraph>
+                The direction of rotation is also important. You should always rotate in the clockwise direction. This means that if you are looking 
+                from the camera at the object, the rotation should always be towards your left.
+            </Paragraph>
+            <Paragraph>
+                <Image Source="pack://application:,,,/Ajubaa.IBModeler.Help;component/images/alway_rotate_towards_left.png" 
+                    ToolTip="always rotate towards left" MaxHeight="311"/>
+            </Paragraph>
+            <Paragraph>
+                Once you have taken the photos, download them onto the computer where ibmodeler is installed. Make sure all the photos are
+                in one folder. Also ensure that the folder only has the photos that you just shot. 
+            </Paragraph>
+            <Paragraph>
+                You are now ready to use ibmodeler to create models from them.
+            </Paragraph>
+            <Paragraph>
+
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentScrollViewer>
+</Window>

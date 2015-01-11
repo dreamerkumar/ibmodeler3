@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="Ajubaa.IBModeler.Help.DialogHelps.AddSkinDialog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\Resources\TextStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <TextBlock Style="{StaticResource UsualText}" TextWrapping="Wrap" Margin="10">
+        <TextBlock TextDecorations="Underline">Add a skin to the model</TextBlock>
+        <LineBreak/>
+        Give your model a real look by overlaying the photos on top of the model mesh. 
+        <LineBreak/>
+        This is called skinning or adding textures.
+        <LineBreak/>
+        <LineBreak/>
+        Choose one of the options from the list to create your skin. 
+        <LineBreak/>
+        <LineBreak/>
+        As you choose a option, top help image shows the photos that will be used.
+        <LineBreak/>
+        <LineBreak/>
+        Using front and back photos is selected by default.
+        <LineBreak/>        
+        You can also try creating skins with 4 or 8 photos.
+        <LineBreak/>
+        Or you can select a single color for the entire model.
+        <LineBreak/>
+        <LineBreak/>
+        You can always change your selection by clicking on the 'Add/Change Skin' button again.
+    </TextBlock>
+</UserControl>

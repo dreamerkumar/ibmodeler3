@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="Ajubaa.IBModeler.UI.GetCameraParamsInputThroughImgPoints.IndividualImgHandler"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:GetCameraParamsInputThroughImgPoints="clr-namespace:Ajubaa.IBModeler.UI.GetCameraParamsInputThroughImgPoints" mc:Ignorable="d" 
+             x:ClassModifier="internal">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources\GlassButton.xaml"/>
+                <ResourceDictionary Source="Resources\ButtonStyle1.xaml"/>
+                <ResourceDictionary Source="Resources\Orange_BACKGROUND.xaml"/>                
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+
+        
+
+        <!-- Absolute positioning is required on this control as it contains a child canvas element (image canvas). canvas can only work with absolute positionings-->
+        <Canvas Width="800" Height="580" x:Name="ParentCanvas">
+
+            <StackPanel x:Name="StatusPanel" Canvas.Left="0" Canvas.Top="0" Width="800" Height="20" Grid.Row="1" Grid.Column="0" ZIndex="5">
+                <TextBlock x:Name="Status" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Orange" FontFamily="./Fonts/#Orbitron" FontSize="15" Text="Image 1 of 20"/>
+            </StackPanel>
+
+            <Canvas Canvas.Left="0" Canvas.Top="20" Width="300" Height="560" x:Name="HelpCanvas">
+                <StackPanel Canvas.Left="0" Canvas.Top="0" Width="300" Height="570" Orientation="Vertical" VerticalAlignment="Top">
+                    <Image x:Name="ClickHelpImage" />
+                    <TextBlock x:Name="ClickHelpText" Margin="5,0,0,0" Padding="5" Foreground="#3A6394" FontWeight="Bold" FontFamily="./Fonts/#junction" FontSize="15" TextWrapping="Wrap" >
+                    <TextBlock x:Name="ClickHelpText1" TextWrapping="Wrap"/>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <TextBlock x:Name="ClickHelpText2" TextWrapping="Wrap"/>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <TextBlock x:Name="ClickHelpText3" TextWrapping="Wrap"/>
+                </TextBlock>
+                </StackPanel>
+            </Canvas>
+
+            <GetCameraParamsInputThroughImgPoints:ImageCanvas Canvas.Left="301" Canvas.Top="20" x:Name="ImageCanvas" Width="500" Height="500"/>
+
+            <StackPanel Canvas.Left="0" Canvas.Top="520" Width="800" Grid.Row="1" Grid.Column="0">
+                <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal"  >
+                    <TextBlock FontSize="15" FontFamily="./Fonts/#junction" VerticalAlignment="Center" Foreground="#3A6394" FontWeight="Bold" Text="Click Undo to revert your last click."/>
+                <Button  Content="Prev" Click="PreviousClick" x:Name="Previous" ToolTip="Click to go to the previous image."
+                        FontSize="15" 
+                        Style="{StaticResource GlassButton}" Width="70" Height="50" Background="#FF1D5BBA"  Margin="5,5,0,10"
+                        Foreground="Orange"
+                        FontFamily="Arial Unicode MS"  />
+                <Button  Content="Undo" Click="UndoClick" x:Name="Undo" ToolTip="Click Undo to revert your last click."
+                        FontSize="15" 
+                        Style="{StaticResource GlassButton}" Width="70" Height="50" Background="#FF1D5BBA"  Margin="5,5,5,10"
+                        Foreground="Orange"
+                        FontFamily="Arial Unicode MS"  />
+                    <Button  Content="Next" Click="Next_Click" x:Name="Next" ToolTip="Goto next image"
+                        FontSize="15" 
+                        Style="{StaticResource GlassButton}" Width="70" Height="50" Background="#FF1D5BBA"  Margin="0,5,5,10"
+                        Foreground="Orange"
+                        FontFamily="Arial Unicode MS"  />
+                </StackPanel>
+            </StackPanel>
+
+            <!--<Button Canvas.Left="640" Canvas.Top="0"  Height="140" Canvas.ZIndex="10"  Width="140" HorizontalAlignment="Center" Style="{StaticResource ButtonStyle1}" VerticalAlignment="Center" Background="{StaticResource Orange_BACKGROUND}" FontFamily="Arial Unicode MS" 
+                             Margin="10" ToolTip="Auto Configure click positions" Click="AutoConfigureClicked">
+                <ContentControl>
+                    <TextBlock TextWrapping="Wrap" Text="Auto Configure" HorizontalAlignment="Center" TextAlignment="Center"/>
+                </ContentControl>
+            </Button>-->
+        </Canvas>
+
+</UserControl>

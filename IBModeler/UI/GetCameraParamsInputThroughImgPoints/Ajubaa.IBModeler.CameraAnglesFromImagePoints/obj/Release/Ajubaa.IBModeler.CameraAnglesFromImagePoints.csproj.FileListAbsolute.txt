@@ -1,0 +1,9 @@
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints\bin\Release\Ajubaa.IBModeler.CameraAnglesFromImagePoints.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints\bin\Release\Ajubaa.IBModeler.CameraAnglesFromImagePoints.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints\obj\Release\ResolveAssemblyReference.cache
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints\obj\Release\Ajubaa.IBModeler.CameraAnglesFromImagePoints.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints\obj\Release\Ajubaa.IBModeler.CameraAnglesFromImagePoints.pdb
+C:\MYFILES_LESS_FREQUENT_BACKUP\IBMODELER\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints\bin\Release\Ajubaa.IBModeler.CameraAnglesFromImagePoints.dll
+C:\MYFILES_LESS_FREQUENT_BACKUP\IBMODELER\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints\bin\Release\Ajubaa.IBModeler.CameraAnglesFromImagePoints.pdb
+C:\MYFILES_LESS_FREQUENT_BACKUP\IBMODELER\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints\obj\Release\Ajubaa.IBModeler.CameraAnglesFromImagePoints.dll
+C:\MYFILES_LESS_FREQUENT_BACKUP\IBMODELER\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints\obj\Release\Ajubaa.IBModeler.CameraAnglesFromImagePoints.pdb

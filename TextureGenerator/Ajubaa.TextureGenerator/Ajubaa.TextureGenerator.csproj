@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F71D4C14-5F2B-427A-9F9A-9B9B1CCEFAF3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ajubaa.TextureGenerator</RootNamespace>
+    <AssemblyName>Ajubaa.TextureGenerator</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BestImageSelectors\IBestImageSelector.cs" />
+    <Compile Include="BestImageSelectors\PolyNormalBasedImageSelector.cs" />
+    <Compile Include="BestImageSelectors\PositionAngleBasedImageSelector.cs" />
+    <Compile Include="Entities\BestImageParams.cs" />
+    <Compile Include="Entities\ImageIndexAndAngle.cs" />
+    <Compile Include="Entities\ImageIndexAndDirection.cs" />
+    <Compile Include="Entities\ImageSpecifics.cs" />
+    <Compile Include="Entities\ImgIndexRange.cs" />
+    <Compile Include="Entities\ImageDimensions.cs" />
+    <Compile Include="Entities\ImgWidthOptimizations\MinAndMaxIndices.cs" />
+    <Compile Include="Entities\ImgWidthOptimizations\MinAndMaxTexCoodValueLimits.cs" />
+    <Compile Include="Entities\ImgWidthOptimizations\OptimizedImgParams.cs" />
+    <Compile Include="Entities\TextureCoordinatesAndBitmap.cs" />
+    <Compile Include="Entities\TexCoodAndImgIndex.cs" />
+    <Compile Include="Entities\ImgWidthOptimizations\YPixelWiseImgWidths.cs" />
+    <Compile Include="Entities\ImgWidthOptimizations\YPixelWiseXIndices.cs" />
+    <Compile Include="SideHolePlugging\HolePlugger.cs" />
+    <Compile Include="SideHolePlugging\HoleStatusEnum.cs" />
+    <Compile Include="SideHolePlugging\LeftHoleStatusHelper.cs" />
+    <Compile Include="SideHolePlugging\MinXOrMaxXEnum.cs" />
+    <Compile Include="SideHolePlugging\PointExtensions.cs" />
+    <Compile Include="SideHolePlugging\RightHoleStatusHelper.cs" />
+    <Compile Include="SideHolePlugging\IHoleStatusHelper.cs" />
+    <Compile Include="ImgWidthOptimizer.cs" />
+    <Compile Include="IndexRangeProcessor.cs" />
+    <Compile Include="TexCoodCalculator.cs" />
+    <Compile Include="TexCoordinateProcessor.cs" />
+    <Compile Include="TexImageRightSideOptimizer.cs" />
+    <Compile Include="Entities\AddTexImageInfo.cs" />
+    <Compile Include="Entities\CameraRatio.cs" />
+    <Compile Include="Entities\FourByFourMatrix.cs" />
+    <Compile Include="Entities\ImgDataLayout.cs" />
+    <Compile Include="Entities\ImgOrientation.cs" />
+    <Compile Include="Entities\OneByFourMatrix.cs" />
+    <Compile Include="NormalCalculator.cs" />
+    <Compile Include="TexImageLeftSideOptimizer.cs" />
+    <Compile Include="TexImageOptimizer.cs" />
+    <Compile Include="TextureProcessor.cs" />
+    <Compile Include="Entities\ModelMeshAndTexture.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpaceTransformationHandler.cs" />
+    <Compile Include="Entities\AddTextureInfo.cs" />
+    <Compile Include="Entities\PixelPosition.cs" />
+    <Compile Include="TextureImageHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Ajubaa.Common\Ajubaa.Common.csproj">
+      <Project>{8E6395DC-4BE2-4D63-86CD-584AD30A94F1}</Project>
+      <Name>Ajubaa.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MatrixManipulations\Ajubaa.Common.MatrixManipulations\Ajubaa.Common.MatrixManipulations.csproj">
+      <Project>{2E55FED1-4C02-4B3D-9974-8ADDB02B2F7A}</Project>
+      <Name>Ajubaa.Common.MatrixManipulations</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

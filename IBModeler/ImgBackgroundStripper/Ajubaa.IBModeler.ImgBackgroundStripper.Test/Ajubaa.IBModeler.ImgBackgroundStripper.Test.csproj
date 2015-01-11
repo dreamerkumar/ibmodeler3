@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB7B9BE8-467C-48AF-BA91-9FD93436F2DE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ajubaa.IBModeler.ImgBackgroundStripper.Test</RootNamespace>
+    <AssemblyName>Ajubaa.IBModeler.ImgBackgroundStripper.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\SharedLib\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ColorVariationPercentBasedStripperTest.cs" />
+    <Compile Include="ComparisonWithImgWithoutModelBasedStripperTest.cs" />
+    <Compile Include="ImgStripStatusTest.cs" />
+    <Compile Include="ScreenBasedStripperTest.cs" />
+    <Compile Include="StripsBasedOnImgWithoutModelTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Output\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Ajubaa.Common\Ajubaa.Common.csproj">
+      <Project>{8E6395DC-4BE2-4D63-86CD-584AD30A94F1}</Project>
+      <Name>Ajubaa.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ajubaa.IBModeler.Common\Ajubaa.IBModeler.Common.csproj">
+      <Project>{42E78142-4720-4128-9208-046896F53176}</Project>
+      <Name>Ajubaa.IBModeler.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ajubaa.IBModeler.ImgBackgroundStripper\Ajubaa.IBModeler.ImgBackgroundStripper.csproj">
+      <Project>{F35A27F0-76E9-42D3-A97B-B4626925F1CE}</Project>
+      <Name>Ajubaa.IBModeler.ImgBackgroundStripper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Input\ComparisonWithImgWithoutModel\base.jpg" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\base1.JPG" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\booklet.jpg" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\booklet_background.jpg" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\doggy.JPG" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\mario.JPG" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\me.jpg" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\me1.jpg" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\me1_background.jpg" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\me2.jpg" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\me2_background.jpg" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\me3.jpg" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\me3_background.jpg" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\me4.jpg" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\me4_background.jpg" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\me5.JPG" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\me5_background.JPG" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\me6.JPG" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\me6_background.JPG" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\me_background.jpg" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\mini.jpg" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\noopur.jpg" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\noopur_background.jpg" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\teddy.JPG" />
+    <Content Include="Input\ComparisonWithImgWithoutModel\toy_catterpillar.jpg" />
+    <Content Include="Input\dinosaur.JPG" />
+    <Content Include="Input\mario.JPG" />
+    <Content Include="Input\MyPhoto.jpg" />
+    <Content Include="Input\nativeamerican.JPG" />
+    <Content Include="Input\toypenguin.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

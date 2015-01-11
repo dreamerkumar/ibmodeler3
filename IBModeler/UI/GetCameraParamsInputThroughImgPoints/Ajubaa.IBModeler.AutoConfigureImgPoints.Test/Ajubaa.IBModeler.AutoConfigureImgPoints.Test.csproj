@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB582AA3-3B06-4337-8CCB-8065ABF08949}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ajubaa.IBModeler.AutoConfigureImgPoints.Test</RootNamespace>
+    <AssemblyName>Ajubaa.IBModeler.AutoConfigureImgPoints.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajubaa.Common">
+      <HintPath>..\..\Main\Lib\Ajubaa.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ajubaa.IBModeler.Common">
+      <HintPath>..\..\Main\Lib\Ajubaa.IBModeler.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ajubaa.IBModeler.Processor, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Main\Lib\Ajubaa.IBModeler.Processor.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\..\SharedLib\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClickPositionCalculatorTest.cs" />
+    <Compile Include="ColorVariationCalculatorTest.cs" />
+    <Compile Include="DistanceProcessorTest.cs" />
+    <Compile Include="LinePtsProcessorTest.cs" />
+    <Compile Include="EdgePtsProcessorTest.cs" />
+    <Compile Include="MarkerProcessorTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Output\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ajubaa.IBModeler.AutoConfigureImgPoints\Ajubaa.IBModeler.AutoConfigureImgPoints.csproj">
+      <Project>{883859B4-2662-477E-99A6-C68CA8B80DBE}</Project>
+      <Name>Ajubaa.IBModeler.AutoConfigureImgPoints</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Input\mario\ClickInputs.xml" />
+    <Content Include="Input\mario\IMG_0944.JPG" />
+    <Content Include="Input\mario\ScreenBasedParams.xml" />
+    <Content Include="Input\TestImage.png" />
+    <Content Include="Input\TestImage1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

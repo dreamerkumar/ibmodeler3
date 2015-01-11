@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScreenBasedParams xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ScreenColorTypes>GreenScreen</ScreenColorTypes>
+  <MinColorOffset>56</MinColorOffset>
+  <MaxDiffPercent>100</MaxDiffPercent>
+</ScreenBasedParams>

@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{647ED454-A2D8-4DCE-815B-F668E1654E86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ajubaa.IBModeler.UI.Main</RootNamespace>
+    <AssemblyName>Ajubaa.IBModeler.UI.Main</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>personal.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajubaa.Common">
+      <HintPath>..\Lib\Ajubaa.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ajubaa.Common.MatrixManipulations">
+      <HintPath>..\Lib\Ajubaa.Common.MatrixManipulations.dll</HintPath>
+    </Reference>
+    <Reference Include="Ajubaa.Common.PolygonDataWriters">
+      <HintPath>..\Lib\Ajubaa.Common.PolygonDataWriters.dll</HintPath>
+    </Reference>
+    <Reference Include="Ajubaa.IBModeler.Common">
+      <HintPath>..\Lib\Ajubaa.IBModeler.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ajubaa.IBModeler.ImageAlterations">
+      <HintPath>..\Lib\Ajubaa.IBModeler.ImageAlterations.dll</HintPath>
+    </Reference>
+    <Reference Include="Ajubaa.IBModeler.ImgBackgroundStripper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Ajubaa.IBModeler.ImgBackgroundStripper.dll</HintPath>
+    </Reference>
+    <Reference Include="Ajubaa.IBModeler.ImgToObj">
+      <HintPath>..\Lib\Ajubaa.IBModeler.ImgToObj.dll</HintPath>
+    </Reference>
+    <Reference Include="Ajubaa.IBModeler.Processor">
+      <HintPath>..\Lib\Ajubaa.IBModeler.Processor.dll</HintPath>
+    </Reference>
+    <Reference Include="Ajubaa.IBModeler.PtsToPolygons">
+      <HintPath>..\Lib\Ajubaa.IBModeler.PtsToPolygons.dll</HintPath>
+    </Reference>
+    <Reference Include="Ajubaa.SurfaceSmoother.FullModelSmoother">
+      <HintPath>..\Lib\Ajubaa.SurfaceSmoother.FullModelSmoother.dll</HintPath>
+    </Reference>
+    <Reference Include="Ajubaa.TextureGenerator">
+      <HintPath>..\Lib\Ajubaa.TextureGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AddSkin.xaml.cs">
+      <DependentUpon>AddSkin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdjustSkinParams.cs" />
+    <Compile Include="ByteSerializer.cs" />
+    <Compile Include="ClickCanvasContainer.xaml.cs">
+      <DependentUpon>ClickCanvasContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ClickedEventArgs.xaml.cs" />
+    <Compile Include="AutoConfigureContainer.xaml.cs">
+      <DependentUpon>AutoConfigureContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Colorpicker.xaml.cs">
+      <DependentUpon>Colorpicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdjustSkin.xaml.cs">
+      <DependentUpon>AdjustSkin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SliderForAdjustSkin.xaml.cs">
+      <DependentUpon>SliderForAdjustSkin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HardwareId.cs" />
+    <Compile Include="ScreenTypesEnum.cs" />
+    <Compile Include="ScreenTypeStatusHelper.cs" />
+    <Compile Include="SliderForMeshDensity.xaml.cs">
+      <DependentUpon>SliderForMeshDensity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImagesCarouselView.xaml.cs">
+      <DependentUpon>ImagesCarouselView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModelViewContainer.xaml.cs">
+      <DependentUpon>ModelViewContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModelSettingsContainer.xaml.cs">
+      <DependentUpon>ModelSettingsContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModelSettingsEventArgs.cs" />
+    <Compile Include="ProcessContainer.xaml.cs">
+      <DependentUpon>ProcessContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessedEventArgs.xaml.cs" />
+    <Compile Include="SelectFolderContainer.xaml.cs">
+      <DependentUpon>SelectFolderContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SelectFolderEventArgs.xaml.cs" />
+    <Compile Include="SliderForScreenParams.xaml.cs">
+      <DependentUpon>SliderForScreenParams.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StringCollection.cs" />
+    <Compile Include="StripBackgroundContainer.xaml.cs">
+      <DependentUpon>StripBackgroundContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StripBackgroundEventArgs.cs" />
+    <Compile Include="TextureTypeEnum.cs" />
+    <Compile Include="TopMessage.xaml.cs">
+      <DependentUpon>TopMessage.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AddSkin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ClickCanvasContainer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AutoConfigureContainer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Colorpicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AdjustSkin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SliderForAdjustSkin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\TextStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\MyListBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SliderForMeshDensity.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ImagesCarouselView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="ModelViewContainer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ModelSettingsContainer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProcessContainer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\GlassButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Shared.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Slider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SelectFolderContainer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SliderForScreenParams.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StripBackgroundContainer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TopMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <Resource Include="Fonts\bnagle_-_archdiocese.otf" />
+    <Resource Include="Fonts\bnagle_-_Paperback.otf" />
+    <Resource Include="Fonts\final font - Junction 01.otf" />
+    <Resource Include="Fonts\GoudyBookletter1911.otf" />
+    <Resource Include="Fonts\OFLGoudyStM-Italic.otf" />
+    <Resource Include="Fonts\OFLGoudyStM.otf" />
+    <Resource Include="Fonts\spinweradC.ttf" />
+    <Resource Include="Fonts\TitilliumText1.otf" />
+    <Resource Include="Fonts\TitilliumText400wt.otf" />
+    <Resource Include="Fonts\TitilliumText800wt.otf" />
+    <Resource Include="Fonts\TitilliumText999wt.otf" />
+    <Resource Include="Fonts\orbitron-black.ttf" />
+    <Resource Include="Fonts\orbitron-bold.ttf" />
+    <Resource Include="Fonts\orbitron-light.ttf" />
+    <Resource Include="Fonts\orbitron-medium.ttf" />
+    <Resource Include="Fonts\raleway_thin.ttf" />
+    <Resource Include="Fonts\Justus-Bold.ttf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="download location for images in this folder.txt" />
+    <Resource Include="fmg_classshapes.jpg" />
+    <Resource Include="greenbl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="select_folder_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Ajubaa.XamlModelViewer._3DTools\Ajubaa.XamlModelViewer._3DTools.csproj">
+      <Project>{5F603892-DE40-4246-A969-1C6717AFE35D}</Project>
+      <Name>Ajubaa.XamlModelViewer._3DTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FluidKit\FluidKit.csproj">
+      <Project>{75541544-BF77-4FDC-B03B-BC0DBEBFB8F5}</Project>
+      <Name>FluidKit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.AutoConfigureImgPoints\Ajubaa.IBModeler.AutoConfigureImgPoints.csproj">
+      <Project>{883859B4-2662-477E-99A6-C68CA8B80DBE}</Project>
+      <Name>Ajubaa.IBModeler.AutoConfigureImgPoints</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints.csproj">
+      <Project>{14C48E12-4722-466C-8C03-9A11A36E1055}</Project>
+      <Name>Ajubaa.IBModeler.CameraAnglesFromImagePoints</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.UI.GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.UI.GetCameraParamsInputThroughImgPoints.csproj">
+      <Project>{BAB1758F-A4C8-4C13-8385-4BBC077ED88E}</Project>
+      <Name>Ajubaa.IBModeler.UI.GetCameraParamsInputThroughImgPoints</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ajubaa.IBModeler.Help\Ajubaa.IBModeler.Help.csproj">
+      <Project>{71BF43A4-3FDC-4C01-9823-4C76FD08B48F}</Project>
+      <Name>Ajubaa.IBModeler.Help</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\high mesh.png" />
+    <Resource Include="images\lowmesh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\ff.png" />
+    <Resource Include="images\rw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="personal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon download location.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\lesstime.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\moretime.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SamplePhotos\BackgroundStrippingParams.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\ClickInputs.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1099.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1100.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1101.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1102.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1103.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1104.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1105.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1106.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1107.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1108.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1109.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1110.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1111.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1112.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1113.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1114.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1115.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1116.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1117.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1118.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1119.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1120.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1121.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1122.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1123.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1124.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1125.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1126.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1127.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1128.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1129.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1130.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1131.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1132.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SamplePhotos\IMG_1133.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="images\fur_btn_bkgrnd.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\pattern_btn_bkgrnd.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\stone_btn_bkgrnd.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\wood_btn_bkgrnd.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\alert.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="images\fur.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="images\mfOAU8I.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\meLUktg.jpg" />
+    <Content Include="images\pattern.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="images\processing.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\skin_count_selection\front_back.png" />
+    <Resource Include="images\skin_count_selection\four_corners.png" />
+    <Resource Include="images\skin_count_selection\eight_corners.png" />
+    <Content Include="images\stone.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\wood.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

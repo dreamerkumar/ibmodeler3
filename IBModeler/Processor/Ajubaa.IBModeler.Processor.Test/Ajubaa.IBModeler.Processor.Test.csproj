@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA4A206D-CD77-4AD5-8579-4D9C18C74E47}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ajubaa.IBModeler.Processor.Test</RootNamespace>
+    <AssemblyName>Ajubaa.IBModeler.Processor.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\SharedLib\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainProcessorTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Ajubaa.Common\Ajubaa.Common.csproj">
+      <Project>{8E6395DC-4BE2-4D63-86CD-584AD30A94F1}</Project>
+      <Name>Ajubaa.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\PolygonDataWriters\Ajubaa.Common.PolygonDataWriters\Ajubaa.Common.PolygonDataWriters.csproj">
+      <Project>{2B7969F5-2EBA-4D68-AC22-97FF93FF5121}</Project>
+      <Name>Ajubaa.Common.PolygonDataWriters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\TextureGenerator\Ajubaa.TextureGenerator\Ajubaa.TextureGenerator.csproj">
+      <Project>{F71D4C14-5F2B-427A-9F9A-9B9B1CCEFAF3}</Project>
+      <Name>Ajubaa.TextureGenerator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ajubaa.IBModeler.Common\Ajubaa.IBModeler.Common.csproj">
+      <Project>{42E78142-4720-4128-9208-046896F53176}</Project>
+      <Name>Ajubaa.IBModeler.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ajubaa.IBModeler.Processor\Ajubaa.IBModeler.Processor\Ajubaa.IBModeler.Processor.csproj">
+      <Project>{8113DEEE-F13B-4DFD-B711-DEE5C6448BD0}</Project>
+      <Name>Ajubaa.IBModeler.Processor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Output\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Input\dinosaur\Capture_00029.JPG" />
+    <Content Include="Input\dinosaur\Capture_00030.JPG" />
+    <Content Include="Input\dinosaur\Capture_00031.JPG" />
+    <Content Include="Input\dinosaur\Capture_00032.JPG" />
+    <Content Include="Input\dinosaur\Capture_00033.JPG" />
+    <Content Include="Input\dinosaur\Capture_00034.JPG" />
+    <Content Include="Input\dinosaur\Capture_00035.JPG" />
+    <Content Include="Input\dinosaur\Capture_00036.JPG" />
+    <Content Include="Input\dinosaur\Capture_00037.JPG" />
+    <Content Include="Input\dinosaur\Capture_00038.JPG" />
+    <Content Include="Input\dinosaur\Capture_00039.JPG" />
+    <Content Include="Input\dinosaur\Capture_00040.JPG" />
+    <Content Include="Input\dinosaur\Capture_00041.JPG" />
+    <Content Include="Input\dinosaur\Capture_00042.JPG" />
+    <Content Include="Input\dinosaur\Capture_00043.JPG" />
+    <Content Include="Input\dinosaur\Capture_00044.JPG" />
+    <Content Include="Input\dinosaur\Capture_00045.JPG" />
+    <Content Include="Input\dinosaur\Capture_00046.JPG" />
+    <Content Include="Input\dinosaur\Capture_00047.JPG" />
+    <Content Include="Input\dinosaur\Capture_00048.JPG" />
+    <Content Include="Input\dinosaur\Capture_00049.JPG" />
+    <Content Include="Input\dinosaur\Capture_00050.JPG" />
+    <Content Include="Input\dinosaur\Capture_00051.JPG" />
+    <Content Include="Input\dinosaur\Capture_00052.JPG" />
+    <Content Include="Input\dinosaur\Capture_00053.JPG" />
+    <Content Include="Input\dinosaur\ClickInputs.xml" />
+    <Content Include="Input\ExtraPadding\20_percent_on_left.png" />
+    <Content Include="Input\ExtraPadding\40_percent_on_right.png" />
+    <Content Include="Input\ExtraPadding\blank.png" />
+    <Content Include="Input\ExtraPadding\painted_detached_outside_left_right.png" />
+    <Content Include="Input\ExtraPadding\painted_outside_top_bottom.png" />
+    <Content Include="Input\ExtraPadding\painted_within_top_bottom.png" />
+    <Content Include="Input\ExtraPadding\within_but_not_beyond.png" />
+    <Content Include="Input\ImageRotator\1.png" />
+    <Content Include="Input\ImageRotator\disc_first_end_lower.jpg" />
+    <Content Include="Input\ImageRotator\disc_first_end_lower.xml" />
+    <Content Include="Input\ImageRotator\disc_second_end_lower.jpg" />
+    <Content Include="Input\ImageRotator\disc_second_end_lower.xml" />
+    <Content Include="Input\nativeamericanpictures\stand_00003.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00004.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00005.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00006.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00007.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00008.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00009.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00010.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00011.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00012.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00013.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00014.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00015.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00016.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00017.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00018.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00019.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00020.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00021.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00022.JPG" />
+    <Content Include="Input\nativeamericanpictures\stand_00023.JPG" />
+    <Content Include="Input\testcropping_disc_very_left_of_image\1.JPG" />
+    <Content Include="Input\testcropping_disc_very_left_of_image\ClickInputs.xml" />
+    <Content Include="Input\testcropping_disc_very_right_of_image\1.JPG" />
+    <Content Include="Input\testcropping_disc_very_right_of_image\ClickInputs.xml" />
+    <Content Include="Input\testcropping_orig\1.JPG" />
+    <Content Include="Input\testcropping_orig\ClickInputs.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

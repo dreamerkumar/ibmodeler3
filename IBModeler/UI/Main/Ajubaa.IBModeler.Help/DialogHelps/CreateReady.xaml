@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="Ajubaa.IBModeler.Help.DialogHelps.CreateReady"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\Resources\TextStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <TextBlock Style="{StaticResource UsualText}" TextWrapping="Wrap" Margin="10">
+        Ready to create your model?
+        <LineBreak/>
+        <LineBreak/>
+        You can move the slider at the top to select a mesh density for your model.
+        <LineBreak/>
+        <LineBreak/>
+        Models with less mesh density are light weight and faster to create.
+        <LineBreak/>
+        <LineBreak/>
+        Models with high mesh density are heavier but capture more details.
+        <LineBreak/>
+        <LineBreak/>
+        Click on 'Create Model' to start the model creation process.
+        <LineBreak/>
+        <LineBreak/>
+        Click on the buttons on the left to change your settings.
+    </TextBlock>
+</UserControl>

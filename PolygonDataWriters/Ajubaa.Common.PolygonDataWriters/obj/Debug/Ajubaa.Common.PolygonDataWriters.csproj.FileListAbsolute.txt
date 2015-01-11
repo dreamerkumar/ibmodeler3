@@ -1,0 +1,12 @@
+C:\IBMODELER3\Code\branches\rel_3.0\PolygonDataWriters\Ajubaa.Common.PolygonDataWriters\bin\Debug\Xaml\ModelTemplate.xaml
+C:\IBMODELER3\Code\branches\rel_3.0\PolygonDataWriters\Ajubaa.Common.PolygonDataWriters\bin\Debug\Xaml\ModelTemplateWithNoTexture.xaml
+C:\IBMODELER3\Code\branches\rel_3.0\PolygonDataWriters\Ajubaa.Common.PolygonDataWriters\bin\Debug\Ajubaa.Common.PolygonDataWriters.dll
+C:\IBMODELER3\Code\branches\rel_3.0\PolygonDataWriters\Ajubaa.Common.PolygonDataWriters\bin\Debug\Ajubaa.Common.PolygonDataWriters.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\PolygonDataWriters\Ajubaa.Common.PolygonDataWriters\bin\Debug\Ajubaa.Common.dll
+C:\IBMODELER3\Code\branches\rel_3.0\PolygonDataWriters\Ajubaa.Common.PolygonDataWriters\bin\Debug\log4net.dll
+C:\IBMODELER3\Code\branches\rel_3.0\PolygonDataWriters\Ajubaa.Common.PolygonDataWriters\bin\Debug\Ajubaa.Common.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\PolygonDataWriters\Ajubaa.Common.PolygonDataWriters\bin\Debug\log4net.xml
+C:\IBMODELER3\Code\branches\rel_3.0\PolygonDataWriters\Ajubaa.Common.PolygonDataWriters\obj\Debug\ResolveAssemblyReference.cache
+C:\IBMODELER3\Code\branches\rel_3.0\PolygonDataWriters\Ajubaa.Common.PolygonDataWriters\obj\Debug\Ajubaa.Common.PolygonDataWriters.g.resources
+C:\IBMODELER3\Code\branches\rel_3.0\PolygonDataWriters\Ajubaa.Common.PolygonDataWriters\obj\Debug\Ajubaa.Common.PolygonDataWriters.dll
+C:\IBMODELER3\Code\branches\rel_3.0\PolygonDataWriters\Ajubaa.Common.PolygonDataWriters\obj\Debug\Ajubaa.Common.PolygonDataWriters.pdb

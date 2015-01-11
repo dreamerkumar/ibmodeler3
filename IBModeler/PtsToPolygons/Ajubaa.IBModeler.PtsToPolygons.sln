@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.IBModeler.PtsToPolygons", "Ajubaa.IBModeler.PtsToPolygons\Ajubaa.IBModeler.PtsToPolygons.csproj", "{89591D26-9317-4906-84E5-BD63513BD24A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.IBModeler.Common", "..\Ajubaa.IBModeler.Common\Ajubaa.IBModeler.Common.csproj", "{42E78142-4720-4128-9208-046896F53176}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.Common", "..\..\Common\Ajubaa.Common\Ajubaa.Common.csproj", "{8E6395DC-4BE2-4D63-86CD-584AD30A94F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.IBModeler.PtsToPolygons.Test", "Ajubaa.IBModeler.PtsToPolygons.Test\Ajubaa.IBModeler.PtsToPolygons.Test.csproj", "{C0C70466-FF0A-4F3F-B028-FA088A19ECBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.Common.PolygonDataWriters", "..\..\PolygonDataWriters\Ajubaa.Common.PolygonDataWriters\Ajubaa.Common.PolygonDataWriters.csproj", "{2B7969F5-2EBA-4D68-AC22-97FF93FF5121}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.SurfaceSmoother.FullModelSmoother", "..\..\SurfaceSmoother\FullModelSmoother\Ajubaa.SurfaceSmoother.FullModelSmoother\Ajubaa.SurfaceSmoother.FullModelSmoother.csproj", "{055A538F-A05D-4E43-8349-5F253C5B5E95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.TextureGenerator", "..\..\TextureGenerator\Ajubaa.TextureGenerator\Ajubaa.TextureGenerator.csproj", "{F71D4C14-5F2B-427A-9F9A-9B9B1CCEFAF3}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89591D26-9317-4906-84E5-BD63513BD24A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89591D26-9317-4906-84E5-BD63513BD24A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89591D26-9317-4906-84E5-BD63513BD24A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89591D26-9317-4906-84E5-BD63513BD24A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42E78142-4720-4128-9208-046896F53176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E78142-4720-4128-9208-046896F53176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E78142-4720-4128-9208-046896F53176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E78142-4720-4128-9208-046896F53176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E6395DC-4BE2-4D63-86CD-584AD30A94F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E6395DC-4BE2-4D63-86CD-584AD30A94F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E6395DC-4BE2-4D63-86CD-584AD30A94F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E6395DC-4BE2-4D63-86CD-584AD30A94F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C70466-FF0A-4F3F-B028-FA088A19ECBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C70466-FF0A-4F3F-B028-FA088A19ECBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C70466-FF0A-4F3F-B028-FA088A19ECBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C70466-FF0A-4F3F-B028-FA088A19ECBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B7969F5-2EBA-4D68-AC22-97FF93FF5121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B7969F5-2EBA-4D68-AC22-97FF93FF5121}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B7969F5-2EBA-4D68-AC22-97FF93FF5121}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B7969F5-2EBA-4D68-AC22-97FF93FF5121}.Release|Any CPU.Build.0 = Release|Any CPU
+		{055A538F-A05D-4E43-8349-5F253C5B5E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055A538F-A05D-4E43-8349-5F253C5B5E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055A538F-A05D-4E43-8349-5F253C5B5E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055A538F-A05D-4E43-8349-5F253C5B5E95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71D4C14-5F2B-427A-9F9A-9B9B1CCEFAF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71D4C14-5F2B-427A-9F9A-9B9B1CCEFAF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71D4C14-5F2B-427A-9F9A-9B9B1CCEFAF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71D4C14-5F2B-427A-9F9A-9B9B1CCEFAF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

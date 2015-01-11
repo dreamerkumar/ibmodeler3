@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BAB1758F-A4C8-4C13-8385-4BBC077ED88E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ajubaa.IBModeler.GetCameraParamsInputThroughImgPoints</RootNamespace>
+    <AssemblyName>Ajubaa.IBModeler.GetCameraParamsInputThroughImgPoints</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ajubaa.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\Main\Lib\Ajubaa.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ajubaa.Common.MatrixManipulations, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Main\Lib\Ajubaa.Common.MatrixManipulations.dll</HintPath>
+    </Reference>
+    <Reference Include="Ajubaa.IBModeler.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\Main\Lib\Ajubaa.IBModeler.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ajubaa.IBModeler.Processor">
+      <HintPath>..\..\Main\Lib\Ajubaa.IBModeler.Processor.dll</HintPath>
+    </Reference>
+    <Reference Include="Ajubaa.LineFromPtCollection">
+      <HintPath>..\..\Main\Lib\Ajubaa.LineFromPtCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoConfigureSettings.xaml.cs">
+      <DependentUpon>AutoConfigureSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AutoConfigureSettingsEventArgs.cs" />
+    <Compile Include="WpfScreen.cs" />
+    <Page Include="AutoConfigureSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ImgListHandler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IndividualImgHandler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="AllowedRangeHelper.cs" />
+    <Compile Include="DisplayMarkerNames.cs" />
+    <Compile Include="ImageCanvas.cs" />
+    <Compile Include="ImgListHandler.xaml.cs">
+      <DependentUpon>ImgListHandler.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IndividualImgHandler.xaml.cs">
+      <DependentUpon>IndividualImgHandler.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IndividualImgProcessedEventArgs.cs" />
+    <Page Include="Resources\ButtonStyle1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Orange_BACKGROUND.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\GlassButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MarkerDisplayHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="Fonts\final font - Junction 01.otf" />
+    <Resource Include="Fonts\orbitron-black.ttf" />
+    <Resource Include="Fonts\orbitron-medium.ttf" />
+    <Resource Include="Fonts\orbitron-bold.ttf" />
+    <Resource Include="Fonts\orbitron-light.ttf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Main\Ajubaa.IBModeler.Help\Ajubaa.IBModeler.Help.csproj">
+      <Project>{71BF43A4-3FDC-4C01-9823-4C76FD08B48F}</Project>
+      <Name>Ajubaa.IBModeler.Help</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ajubaa.IBModeler.AutoConfigureImgPoints\Ajubaa.IBModeler.AutoConfigureImgPoints.csproj">
+      <Project>{883859B4-2662-477E-99A6-C68CA8B80DBE}</Project>
+      <Name>Ajubaa.IBModeler.AutoConfigureImgPoints</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ajubaa.IBModeler.CameraAnglesFromImagePoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints.csproj">
+      <Project>{14C48E12-4722-466C-8C03-9A11A36E1055}</Project>
+      <Name>Ajubaa.IBModeler.CameraAnglesFromImagePoints</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ClickInputs\1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ClickInputs\2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ClickInputs\3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ClickInputs\4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ClickInputs\5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ClickInputs\6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ClickInputs\7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

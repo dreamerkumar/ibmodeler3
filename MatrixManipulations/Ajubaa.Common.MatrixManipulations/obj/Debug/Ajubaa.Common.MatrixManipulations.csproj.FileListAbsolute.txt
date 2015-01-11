@@ -1,0 +1,9 @@
+C:\IBMODELER3\Code\branches\rel_3.0\MatrixManipulations\Ajubaa.Common.MatrixManipulations\bin\Debug\Ajubaa.Common.MatrixManipulations.dll
+C:\IBMODELER3\Code\branches\rel_3.0\MatrixManipulations\Ajubaa.Common.MatrixManipulations\bin\Debug\Ajubaa.Common.MatrixManipulations.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\MatrixManipulations\Ajubaa.Common.MatrixManipulations\bin\Debug\Ajubaa.Common.dll
+C:\IBMODELER3\Code\branches\rel_3.0\MatrixManipulations\Ajubaa.Common.MatrixManipulations\bin\Debug\log4net.dll
+C:\IBMODELER3\Code\branches\rel_3.0\MatrixManipulations\Ajubaa.Common.MatrixManipulations\bin\Debug\Ajubaa.Common.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\MatrixManipulations\Ajubaa.Common.MatrixManipulations\bin\Debug\log4net.xml
+C:\IBMODELER3\Code\branches\rel_3.0\MatrixManipulations\Ajubaa.Common.MatrixManipulations\obj\Debug\ResolveAssemblyReference.cache
+C:\IBMODELER3\Code\branches\rel_3.0\MatrixManipulations\Ajubaa.Common.MatrixManipulations\obj\Debug\Ajubaa.Common.MatrixManipulations.dll
+C:\IBMODELER3\Code\branches\rel_3.0\MatrixManipulations\Ajubaa.Common.MatrixManipulations\obj\Debug\Ajubaa.Common.MatrixManipulations.pdb

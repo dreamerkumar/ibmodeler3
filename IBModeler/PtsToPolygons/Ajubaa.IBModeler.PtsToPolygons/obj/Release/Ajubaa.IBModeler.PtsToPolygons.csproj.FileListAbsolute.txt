@@ -1,0 +1,11 @@
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\PtsToPolygons\Ajubaa.IBModeler.PtsToPolygons\bin\Release\Ajubaa.IBModeler.PtsToPolygons.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\PtsToPolygons\Ajubaa.IBModeler.PtsToPolygons\bin\Release\Ajubaa.IBModeler.PtsToPolygons.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\PtsToPolygons\Ajubaa.IBModeler.PtsToPolygons\bin\Release\Ajubaa.Common.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\PtsToPolygons\Ajubaa.IBModeler.PtsToPolygons\bin\Release\Ajubaa.IBModeler.Common.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\PtsToPolygons\Ajubaa.IBModeler.PtsToPolygons\bin\Release\log4net.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\PtsToPolygons\Ajubaa.IBModeler.PtsToPolygons\bin\Release\Ajubaa.Common.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\PtsToPolygons\Ajubaa.IBModeler.PtsToPolygons\bin\Release\Ajubaa.IBModeler.Common.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\PtsToPolygons\Ajubaa.IBModeler.PtsToPolygons\bin\Release\log4net.xml
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\PtsToPolygons\Ajubaa.IBModeler.PtsToPolygons\obj\Release\ResolveAssemblyReference.cache
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\PtsToPolygons\Ajubaa.IBModeler.PtsToPolygons\obj\Release\Ajubaa.IBModeler.PtsToPolygons.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\PtsToPolygons\Ajubaa.IBModeler.PtsToPolygons\obj\Release\Ajubaa.IBModeler.PtsToPolygons.pdb

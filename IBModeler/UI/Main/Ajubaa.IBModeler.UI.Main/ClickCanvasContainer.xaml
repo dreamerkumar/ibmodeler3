@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="Ajubaa.IBModeler.UI.Main.ClickCanvasContainer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:GetCameraParamsInputThroughImgPoints="clr-namespace:Ajubaa.IBModeler.UI.GetCameraParamsInputThroughImgPoints;assembly=Ajubaa.IBModeler.GetCameraParamsInputThroughImgPoints" xmlns:Main="clr-namespace:Ajubaa.IBModeler.UI.Main">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+        <Main:TopMessage x:Name="TopMessage" Grid.Row="0" Text="Please specify the positions of the disc and markings on the images. Refer to the section on the left of the photo for help." >
+        </Main:TopMessage>
+
+        <GetCameraParamsInputThroughImgPoints:ImgListHandler Grid.Row="1" x:Name="ImgListHandler"/>
+    </Grid>
+</UserControl>

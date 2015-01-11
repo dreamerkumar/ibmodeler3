@@ -1,0 +1,165 @@
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+   (c) Copyright Microsoft Corporation.
+   This source is subject to the Microsoft Limited Permissive License.
+   See http://www.microsoft.com/resources/sharedsource/licensingbasics/limitedpermissivelicense.mspx
+   All other rights reserved.
+  
+   This file is part of the 3D Tools for Windows Presentation Foundation
+   project.  For more information, see:
+   
+   http://CodePlex.com/Wiki/View.aspx?ProjectName=3DTools
+
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<UserControl x:Class="Ajubaa.XamlModelViewer._3DTools.Trackport3D"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Loaded="OnLoaded"
+    VerticalContentAlignment="Stretch"
+    HorizontalContentAlignment="Stretch"
+    >
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources\GlassButton.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>    
+    
+    <Grid x:Name="ParentGrid">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>          
+          <RowDefinition Height="*" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Grid.Column="0" x:Name="BorderWithBackgrndColor" >
+            <Viewport3D  Name="Viewport" ClipToBounds="True">
+
+        <!--
+              NOTE: In order for the Headlight feature to work the Camera
+                    and DirectionalLight should have the same initial
+                    orientation.  (Default direction for both is "0,0,-1")
+          -->
+                
+            <Viewport3D.Camera>
+                <PerspectiveCamera x:Name="Camera"/>
+            </Viewport3D.Camera>
+            <Viewport3D.Children>
+              <ModelVisual3D>
+                <ModelVisual3D.Content>
+                  <Model3DGroup>
+                    <AmbientLight x:Name="AmbientLight" Color="Black" />
+                    <DirectionalLight x:Name="Headlight" Color="White" />
+                  </Model3DGroup>
+                </ModelVisual3D.Content>
+              </ModelVisual3D>
+              <ModelVisual3D x:Name="Root" />
+            </Viewport3D.Children>
+        </Viewport3D>
+        </Border>
+        <Border Name="CaptureBorder" Background="Transparent" Grid.Row="0" Grid.Column="0" />
+        
+        <Grid Grid.Row="1" Height="140">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button x:Name="WireFrameOrSolidButton" Content="Wireframe View"  Height="120"  
+                    Grid.Column="0"
+                    Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"
+                    Style="{StaticResource ButtonStyle1}" 
+                    Background="{StaticResource Orange_BACKGROUND}" FontFamily="Arial Unicode MS" 
+                    Margin="10,10,10,10"
+                    FontSize="12"
+                    Click="WireFrameOrSolid"/>
+
+            <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <StackPanel.Resources>
+                        <Style TargetType="Border" x:Key="RacePitBorderStyle" >
+                            <Style.Resources>
+                                <LinearGradientBrush x:Key="BackBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+                                <GradientStop Color="#668DAA" Offset="0.1" />
+                                <GradientStop Color="#00111B" Offset="0.9" />
+                                </LinearGradientBrush>
+                            </Style.Resources>
+                            <Setter Property="Background" Value="{StaticResource BackBrush}"/>
+                        </Style>
+                        <DataTemplate x:Key="titleText">
+                            <Border Style="{StaticResource RacePitBorderStyle}" Height="24">
+                                <TextBlock Text="{Binding}"  
+                                            Margin="4 0"      
+                                            VerticalAlignment="Center"                                              
+                                            Foreground="White"       
+                                            FontSize="11"     
+                                            FontWeight="Normal"                                               
+                                            Width="{Binding  RelativeSource={RelativeSource  Mode=FindAncestor, AncestorType={x:Type Expander}},  
+                                            Path=ActualWidth}"  
+                                            TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                        <Style TargetType="{x:Type Expander}">
+                            <Setter Property="HeaderTemplate" Value="{StaticResource titleText}"/>
+                        </Style>
+                    </StackPanel.Resources>
+                    <Expander Header="Animations" Width="285" BorderThickness="1" IsExpanded="True">
+                        <Expander.BorderBrush>
+                        <SolidColorBrush Color="#00111B"/>
+                        </Expander.BorderBrush>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="Drop" 
+                                FontSize="14" 
+                                Style="{StaticResource GlassButton}" Width="80" Height="80" 
+                                Background="#FF1D5BBA"  Margin="10,10,5,10"
+                                HorizontalAlignment="Center" 
+                                VerticalAlignment="Center" 
+                                Foreground="Orange"                                
+                                FontFamily="Arial Unicode MS"  
+                                Click="MovingView"/>
+                        <Button Content="Disappear" 
+                                FontSize="14" 
+                                Style="{StaticResource GlassButton}" Width="80" Height="80" 
+                                Background="#FF1D5BBA"  Margin="5,10,10,10"
+                                HorizontalAlignment="Center" 
+                                VerticalAlignment="Center" 
+                                Foreground="Orange"                                
+                                FontFamily="Arial Unicode MS"  
+                                Click="Disappear"/>
+                        <Button x:Name="CreateButton" Content="Create" 
+                                FontSize="14" 
+                                Style="{StaticResource GlassButton}" Width="80" Height="80" 
+                                Background="#FF1D5BBA"  Margin="5,10,5,10"
+                                HorizontalAlignment="Center" 
+                                VerticalAlignment="Center" 
+                                Foreground="Orange"                                
+                                FontFamily="Arial Unicode MS"  
+                                Click="SlowGeneration"/>
+
+                        </StackPanel>
+                    </Expander>
+                </StackPanel>
+
+            <Border BorderBrush="Black" Grid.Column="2" Margin="7" BorderThickness="1,1,1,1" CornerRadius="30,30,30,30">
+                <TextBlock 
+                   FontSize="16" FontFamily="./Fonts/#Orbitron"                
+                   FontWeight="UltraBold" TextWrapping="Wrap"                   
+                   VerticalAlignment="Center" TextAlignment="Center" Margin="10,0,10,0">
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="Black"/>                                            
+                </TextBlock.Foreground>
+                Left click and drag model to rotate it.                
+                <LineBreak/>                
+                 Right click and drag to zoom in or zoom out.
+                </TextBlock>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,5 @@
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints\bin\Debug\Ajubaa.IBModeler.CameraAnglesFromImagePoints.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints\bin\Debug\Ajubaa.IBModeler.CameraAnglesFromImagePoints.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints\obj\Debug\ResolveAssemblyReference.cache
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints\obj\Debug\Ajubaa.IBModeler.CameraAnglesFromImagePoints.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\UI\GetCameraParamsInputThroughImgPoints\Ajubaa.IBModeler.CameraAnglesFromImagePoints\obj\Debug\Ajubaa.IBModeler.CameraAnglesFromImagePoints.pdb

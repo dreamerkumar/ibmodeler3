@@ -1,0 +1,11 @@
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgBackgroundStripper\Ajubaa.IBModeler.ImgBackgroundStripper\bin\Debug\Ajubaa.IBModeler.ImgBackgroundStripper.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgBackgroundStripper\Ajubaa.IBModeler.ImgBackgroundStripper\bin\Debug\Ajubaa.IBModeler.ImgBackgroundStripper.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgBackgroundStripper\Ajubaa.IBModeler.ImgBackgroundStripper\bin\Debug\Ajubaa.Common.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgBackgroundStripper\Ajubaa.IBModeler.ImgBackgroundStripper\bin\Debug\Ajubaa.IBModeler.Common.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgBackgroundStripper\Ajubaa.IBModeler.ImgBackgroundStripper\bin\Debug\log4net.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgBackgroundStripper\Ajubaa.IBModeler.ImgBackgroundStripper\bin\Debug\Ajubaa.Common.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgBackgroundStripper\Ajubaa.IBModeler.ImgBackgroundStripper\bin\Debug\Ajubaa.IBModeler.Common.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgBackgroundStripper\Ajubaa.IBModeler.ImgBackgroundStripper\bin\Debug\log4net.xml
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgBackgroundStripper\Ajubaa.IBModeler.ImgBackgroundStripper\obj\Debug\ResolveAssemblyReference.cache
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgBackgroundStripper\Ajubaa.IBModeler.ImgBackgroundStripper\obj\Debug\Ajubaa.IBModeler.ImgBackgroundStripper.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgBackgroundStripper\Ajubaa.IBModeler.ImgBackgroundStripper\obj\Debug\Ajubaa.IBModeler.ImgBackgroundStripper.pdb

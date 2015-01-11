@@ -1,0 +1,145 @@
+﻿<Window x:Class="Ajubaa.IBModeler.Help.Troubleshoot"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Title="Troubleshoot">
+    
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources\LinkButton.xaml"/>
+                <ResourceDictionary Source="Resources\HeaderText.xaml"/>
+                <ResourceDictionary Source="Resources\FlowDocument.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <FlowDocumentScrollViewer>
+        <FlowDocument>            
+            <Paragraph Style="{StaticResource HeaderText}">
+                Troubleshoot
+            </Paragraph>
+            <Paragraph Style="{StaticResource HeaderText}" TextAlignment="Left">
+                If your model has a edgy surface
+            </Paragraph>
+            <Paragraph>
+                You can smoothen the model. Increase the counter value and hit the 'Smoothen' button.
+            </Paragraph>
+            <Paragraph>
+                <Image Source="pack://application:,,,/Ajubaa.IBModeler.Help;component/images/smoothen_control.png" 
+                    ToolTip="Smoothen Control" MaxHeight="276"/>
+            </Paragraph>
+            <Paragraph Style="{StaticResource HeaderText}" TextAlignment="Left">
+                If you just see a cylindrical or cube shaped mesh
+            </Paragraph>
+            <Paragraph>
+                This means that your settings for background screen are not working. 
+                In other words, the separation between the model and the background in the photo could not be made based on the settings provided.
+            </Paragraph>
+            <Paragraph>
+                Click on 'Regenerate' button to go to the settings screen. 
+                Then click on 'Reenter Screen Settings' button. Change background settings. 
+                Click on 'Test' button to ensure that your settings work.
+            </Paragraph>
+            <Paragraph>
+                <Image Source="pack://application:,,,/Ajubaa.IBModeler.Help;component/images/screen_settings_before_test.png" 
+                    ToolTip="before hitting test button" MaxHeight="275"/>
+                <Image Source="pack://application:,,,/Ajubaa.IBModeler.Help;component/images/screen_settings_after_test.png" 
+                    ToolTip="after hitting test button" MaxHeight="275"/>
+            </Paragraph>
+            <Paragraph Style="{StaticResource HeaderText}" TextAlignment="Left">
+                If your model is not detailed enough
+            </Paragraph>
+            <Paragraph>
+                This could partly be because of the number of photos that you provided. 
+                The more photos you shoot, better will be the output. Read below for additional things that you can do.
+            </Paragraph>
+            <Paragraph Style="{StaticResource HeaderText}" TextAlignment="Left">
+                If your model is too light or too heavy
+            </Paragraph>
+            <Paragraph>
+                You can increase or decrease the density level to include finer details of the model. 
+                Click on 'Regenerate' button to go to the settings screen. Then move the slider to the right and hit the 'Create Model' button again.
+            </Paragraph>
+            <Paragraph>
+                <Image Source="pack://application:,,,/Ajubaa.IBModeler.Help;component/images/mesh_density_slider.png" 
+                    ToolTip="mesh density slider" MaxHeight="343"/>
+            </Paragraph>
+            <Paragraph>
+                Remember, that lower mesh density means a lighter model. It will miss finer details. But it will be more responsive to smoothning.
+            </Paragraph>
+            <Paragraph>
+                A higher mesh density model will be heavier but will be more detailed.
+            </Paragraph>
+            <Paragraph Style="{StaticResource HeaderText}" TextAlignment="Left">
+                If parts of your model are getting cut out
+            </Paragraph>
+            <Paragraph>
+                Check if your background settings are cutting of parts of the model as well. 
+                If you would like to check whether the background is being set properly for all photos, 
+                you can see the output of your settings. 
+                <LineBreak/>
+                <LineBreak/>
+                To do that, click on 'Regenerate' button to go to the settings screen. 
+                There is a small "Save Processed Images" next to the Create Button. Check it before hitting the Create button. 
+                This will save all the modified images to a sub folder inside the folder with the source photos.  
+                <LineBreak/>
+                <LineBreak/>
+                There is also a "Analyze Cut Out Data" checkbox which also saves images to a sub folder under the parent image folder. It shows the amount of data being lost after each image is processed.
+            </Paragraph>
+            <Paragraph>
+                <Image Source="pack://application:,,,/Ajubaa.IBModeler.Help;component/images/save_processed_images_checkbox.png" 
+                    ToolTip="Save Processed Images Checkbox" MaxHeight="280"/>
+            </Paragraph>
+            <Paragraph>
+                You can also go back and recheck your markings on the image. 
+                One wrong marking can drastically effect the mesh shape.
+                Click on 'Regenerate' button to go to the settings screen. 
+                Then click on 'Reenger Click Positions'. 
+                Then check each photo one by one to ensure the markings are all right.
+            </Paragraph>
+            <Paragraph>
+                <Image Source="pack://application:,,,/Ajubaa.IBModeler.Help;component/images/click_positions_screen.png" 
+                    ToolTip="Click Positions Screen" MaxHeight="309"/>
+            </Paragraph>
+            <Paragraph>
+                Also, recall if your rotations between each shot was less than the angle between two markings on the disc. 
+                This will cause a miscalculation of the angle of rotation for the photos and as a result, the output mesh will be distorted.
+            </Paragraph>
+            <Paragraph>
+                <Image Source="pack://application:,,,/Ajubaa.IBModeler.Help;component/images/rotation_should_not_exceed.png" 
+                    ToolTip="rotation should not exceed the angle between two markings" MaxHeight="311"/>
+            </Paragraph>
+            <Paragraph>
+                Another point to remember during taking the photo shoot is the direction of rotation. 
+                You should always rotate in the clockwise direction. This means that if you are looking 
+                from the camera at the object, the rotation should always be towards your left.
+            </Paragraph>
+            <Paragraph>
+                <Image Source="pack://application:,,,/Ajubaa.IBModeler.Help;component/images/alway_rotate_towards_left.png" 
+                    ToolTip="always rotate towards left" MaxHeight="311"/>
+            </Paragraph>
+            <Paragraph>
+                Lastly, if your camera is too close to the object while shooting, it might result with cut or deformed shapes as well. 
+                Try to keep the camera as far as possible and use camera zoom to zoom into the model.
+            </Paragraph>
+            <Paragraph Style="{StaticResource HeaderText}" TextAlignment="Left">
+                If you want to change the skinning
+            </Paragraph>
+            <Paragraph>
+                Click on the 'Add/Change Skin' button. 
+                You will be given the option to use 2 photos, 4 photos or 8 photos to create the skin. 
+                Try the combination that gives the best results for you. 
+                You can also create the skin in one specific color.
+            </Paragraph>
+            <Paragraph>
+                <Image Source="pack://application:,,,/Ajubaa.IBModeler.Help;component/images/add_skin_button.png" 
+                    ToolTip="add skin button" MaxHeight="248"/>                    
+            </Paragraph>            
+            <Paragraph>
+
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentScrollViewer>
+</Window>

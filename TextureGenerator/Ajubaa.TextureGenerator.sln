@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.TextureGenerator", "Ajubaa.TextureGenerator\Ajubaa.TextureGenerator.csproj", "{F71D4C14-5F2B-427A-9F9A-9B9B1CCEFAF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.TextureGenerator.Test", "Ajubaa.TextureGenerator.Test\Ajubaa.TextureGenerator.Test.csproj", "{664A3D8D-81BB-4714-B192-808005F7ACE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.Common", "..\Common\Ajubaa.Common\Ajubaa.Common.csproj", "{8E6395DC-4BE2-4D63-86CD-584AD30A94F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.Common.PolygonDataReaders", "..\PolygonDataReaders\Ajubaa.Common.PolygonDataReaders\Ajubaa.Common.PolygonDataReaders.csproj", "{5D11131A-98E1-4716-B2B3-2DDBF1B58A8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.Common.PolygonDataWriters", "..\PolygonDataWriters\Ajubaa.Common.PolygonDataWriters\Ajubaa.Common.PolygonDataWriters.csproj", "{2B7969F5-2EBA-4D68-AC22-97FF93FF5121}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.SurfaceSmoother.FullModelSmoother", "..\SurfaceSmoother\FullModelSmoother\Ajubaa.SurfaceSmoother.FullModelSmoother\Ajubaa.SurfaceSmoother.FullModelSmoother.csproj", "{055A538F-A05D-4E43-8349-5F253C5B5E95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.Common.3DGeometryHelpers", "..\3DGeometryHelpers\Ajubaa.Common.3DGeometryHelpers\Ajubaa.Common.3DGeometryHelpers.csproj", "{CE7FEDE0-DD89-42DF-AB97-F9C2F10EEA1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajubaa.Common.MatrixManipulations", "..\MatrixManipulations\Ajubaa.Common.MatrixManipulations\Ajubaa.Common.MatrixManipulations.csproj", "{2E55FED1-4C02-4B3D-9974-8ADDB02B2F7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F71D4C14-5F2B-427A-9F9A-9B9B1CCEFAF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71D4C14-5F2B-427A-9F9A-9B9B1CCEFAF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71D4C14-5F2B-427A-9F9A-9B9B1CCEFAF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71D4C14-5F2B-427A-9F9A-9B9B1CCEFAF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{664A3D8D-81BB-4714-B192-808005F7ACE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664A3D8D-81BB-4714-B192-808005F7ACE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664A3D8D-81BB-4714-B192-808005F7ACE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{664A3D8D-81BB-4714-B192-808005F7ACE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E6395DC-4BE2-4D63-86CD-584AD30A94F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E6395DC-4BE2-4D63-86CD-584AD30A94F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E6395DC-4BE2-4D63-86CD-584AD30A94F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E6395DC-4BE2-4D63-86CD-584AD30A94F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D11131A-98E1-4716-B2B3-2DDBF1B58A8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D11131A-98E1-4716-B2B3-2DDBF1B58A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D11131A-98E1-4716-B2B3-2DDBF1B58A8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D11131A-98E1-4716-B2B3-2DDBF1B58A8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B7969F5-2EBA-4D68-AC22-97FF93FF5121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B7969F5-2EBA-4D68-AC22-97FF93FF5121}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B7969F5-2EBA-4D68-AC22-97FF93FF5121}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B7969F5-2EBA-4D68-AC22-97FF93FF5121}.Release|Any CPU.Build.0 = Release|Any CPU
+		{055A538F-A05D-4E43-8349-5F253C5B5E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055A538F-A05D-4E43-8349-5F253C5B5E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055A538F-A05D-4E43-8349-5F253C5B5E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055A538F-A05D-4E43-8349-5F253C5B5E95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE7FEDE0-DD89-42DF-AB97-F9C2F10EEA1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE7FEDE0-DD89-42DF-AB97-F9C2F10EEA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE7FEDE0-DD89-42DF-AB97-F9C2F10EEA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE7FEDE0-DD89-42DF-AB97-F9C2F10EEA1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E55FED1-4C02-4B3D-9974-8ADDB02B2F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E55FED1-4C02-4B3D-9974-8ADDB02B2F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E55FED1-4C02-4B3D-9974-8ADDB02B2F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E55FED1-4C02-4B3D-9974-8ADDB02B2F7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

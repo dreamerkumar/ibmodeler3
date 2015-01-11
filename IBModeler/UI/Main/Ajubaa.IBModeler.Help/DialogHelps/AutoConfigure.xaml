@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="Ajubaa.IBModeler.Help.DialogHelps.AutoConfigure"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\Resources\TextStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <TextBlock Style="{StaticResource UsualText}" TextWrapping="Wrap" Margin="10">
+        If you followed the requirements for 'AutoConfigure' during your photo shoot, 
+        <LineBreak/>
+        you can use this screen to automatically identify all the click positions.
+        <LineBreak/>
+        <LineBreak/>
+        Click on the image to identify a safe disc height as explained in the help image on the left.
+        <LineBreak/>
+        <LineBreak/>
+        Then hit the 'Autoconfigure' button to start the process.
+        <LineBreak/>
+        <LineBreak/>
+        Make sure you review the click points after it completes.
+        <LineBreak/>
+        <LineBreak/>
+        Click on the 'Requirements' button to know how to take photos that can be autoconfigured.
+    </TextBlock>
+</UserControl>

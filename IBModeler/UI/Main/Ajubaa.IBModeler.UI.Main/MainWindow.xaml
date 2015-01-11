@@ -1,0 +1,73 @@
+﻿<Window x:Class="Ajubaa.IBModeler.UI.Main.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Main="clr-namespace:Ajubaa.IBModeler.UI.Main" Title="IBModeler 3.0 - Create 3D Models from Photos" Height="350" Width="525">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources\GlassButton.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid x:Name="BaseGrid">
+        <Grid.Background>
+            <ImageBrush ImageSource="images\mfOAU8I.jpg" />
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Column="0">
+                <TextBlock Text=" IBMODELER 3.0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Orange" FontFamily="Algerian" FontSize="20"/>
+                <TextBlock x:Name="StartScreenDialogOptions" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0">
+                    <Hyperlink Click="ClickStartScreenDialogOptions" ToolTip="Help dialog options" FontSize="12" Foreground="Orange" FontFamily="./Fonts/#junction">
+                        <Run Text="Help dialog options"/>
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal" >
+
+                <TextBlock Margin="0,0,20,10" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Orange" FontFamily="./Fonts/#junction" FontSize="17">
+                    <Hyperlink NavigateUri="http://www.ajubaa.com" ToolTip="Click to go to website" Foreground="Orange" FontWeight="UltraBold" x:Name="WebsiteLink" RequestNavigate="WebsiteLinkRequestNavigate">
+                        <Run Text="www.ajubaa.com"/>
+                    </Hyperlink>
+                </TextBlock>
+                
+                <TextBlock Margin="0,0,20,10" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Orange" FontFamily="./Fonts/#junction" FontSize="17">
+                    <Hyperlink NavigateUri="mailto:support@ajubaa.com" ToolTip="Click to send an email" Foreground="Orange" FontWeight="UltraBold" x:Name="HelpLink" RequestNavigate="HelpLinkRequestNavigate">
+                        <Run Text="support@ajubaa.com"/>
+                    </Hyperlink>
+                </TextBlock>
+                
+                <Button Content="Cancel" Click="Cancel" x:Name="CancelButton" ToolTip="Cancel"
+                    FontSize="15" 
+                    Style="{StaticResource GlassButton}" Width="70" Height="50" Background="#FF1D5BBA"  Margin="0,5,10,10"
+                    Foreground="Orange"
+                    FontFamily="Arial Unicode MS"  />
+
+                <Button Content="Help" Click="Help" x:Name="HelpButton" ToolTip="Open Help Document"
+                    FontSize="15" 
+                    Style="{StaticResource GlassButton}" Width="70" Height="50" Background="#FF1D5BBA"  Margin="0,5,10,10"
+                    Foreground="Orange"
+                    FontFamily="Arial Unicode MS"  />
+                
+                <Button Content="Close" Click="Close" x:Name="CloseButton" ToolTip="Close and exit this application"
+                    FontSize="15" 
+                    Style="{StaticResource GlassButton}" Width="70" Height="50" Background="#FF1D5BBA"  Margin="0,5,10,10"
+                    Foreground="Orange"
+                    FontFamily="Arial Unicode MS"  />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

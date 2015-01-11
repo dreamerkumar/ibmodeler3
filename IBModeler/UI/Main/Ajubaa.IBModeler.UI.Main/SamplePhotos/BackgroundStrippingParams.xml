@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BackgroundStrippingParams xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <BackgroundColor>
+    <R>200</R>
+    <G>200</G>
+    <B>200</B>
+  </BackgroundColor>
+  <ScreenBasedParams>
+    <ScreenColorTypes>GreenScreen</ScreenColorTypes>
+    <MinColorOffset>25</MinColorOffset>
+    <MaxDiffPercent>100</MaxDiffPercent>
+  </ScreenBasedParams>
+</BackgroundStrippingParams>

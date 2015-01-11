@@ -1,0 +1,11 @@
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgToObj\Ajubaa.IBModeler.ImgToObj\bin\Debug\Ajubaa.IBModeler.ImgToObj.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgToObj\Ajubaa.IBModeler.ImgToObj\bin\Debug\Ajubaa.IBModeler.ImgToObj.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgToObj\Ajubaa.IBModeler.ImgToObj\bin\Debug\Ajubaa.Common.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgToObj\Ajubaa.IBModeler.ImgToObj\bin\Debug\Ajubaa.IBModeler.Common.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgToObj\Ajubaa.IBModeler.ImgToObj\bin\Debug\log4net.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgToObj\Ajubaa.IBModeler.ImgToObj\bin\Debug\Ajubaa.Common.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgToObj\Ajubaa.IBModeler.ImgToObj\bin\Debug\Ajubaa.IBModeler.Common.pdb
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgToObj\Ajubaa.IBModeler.ImgToObj\bin\Debug\log4net.xml
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgToObj\Ajubaa.IBModeler.ImgToObj\obj\Debug\ResolveAssemblyReference.cache
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgToObj\Ajubaa.IBModeler.ImgToObj\obj\Debug\Ajubaa.IBModeler.ImgToObj.dll
+C:\IBMODELER3\Code\branches\rel_3.0\IBModeler\ImgToObj\Ajubaa.IBModeler.ImgToObj\obj\Debug\Ajubaa.IBModeler.ImgToObj.pdb
